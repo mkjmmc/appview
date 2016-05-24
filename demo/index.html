@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="telephone=no,email=no" name="format-detection">
+<script src="../build/flexible.js"></script>
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+<link type="text/css" rel="stylesheet" href="../build/base.css" />
+<link type="text/css" rel="stylesheet" href="../build/font.css" />
+<link type="text/css" rel="stylesheet" href="css/doc.css" />
+<link rel="stylesheet" href="highlight/styles/github.css">
+<script type="text/javascript" src="highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<title>文档</title>
+</head>
+<body>
+<div class="bs-docs-section">
+  <h1 id="type" class="page-header"><a class="anchorjs-link " href="#type" aria-label="Anchor link for: type" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>排版</h1>
+  <h3 id="-3"><a class="anchorjs-link " href="#-3" aria-label="Anchor link for:  3" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>被删除的文本</h3>
+  <p>对于被删除的文本使用 <code>&lt;del&gt;</code> 标签。</p>
+  <div class="bs-example" data-example-id="simple-del">
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;del&gt;</span>This line of text is meant to be treated as deleted text.<span class="nt">&lt;/del&gt;</span></code></pre>
+  </div>
+  <h3 id="-4"><a class="anchorjs-link " href="#-4" aria-label="Anchor link for:  4" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>无用文本</h3>
+  <p>对于没用的文本使用 <code>&lt;s&gt;</code> 标签。</p>
+  <div class="bs-example" data-example-id="simple-s">
+    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;s&gt;</span>This line of text is meant to be treated as no longer accurate.<span class="nt">&lt;/s&gt;</span></code></pre>
+  </div>
+  <h3 id="-5"><a class="anchorjs-link " href="#-5" aria-label="Anchor link for:  5" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>插入文本</h3>
+  <p>额外插入的文本使用 <code>&lt;ins&gt;</code> 标签。</p>
+  <div class="bs-example" data-example-id="simple-ins">
+    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ins&gt;</span>This line of text is meant to be treated as an addition to the document.<span class="nt">&lt;/ins&gt;</span></code></pre>
+  </div>
+  <h3 id="-6"><a class="anchorjs-link " href="#-6" aria-label="Anchor link for:  6" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>带下划线的文本</h3>
+  <p>为文本添加下划线，使用 <code>&lt;u&gt;</code> 标签。</p>
+  <div class="bs-example" data-example-id="simple-u">
+    <p><u>This line of text will render as underlined</u></p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;u&gt;</span>This line of text will render as underlined<span class="nt">&lt;/u&gt;</span></code></pre>
+  </div>
+  <p>利用 HTML 自带的表示强调意味的标签来为文本增添少量样式。</p>
+  <h3 id="-7"><a class="anchorjs-link " href="#-7" aria-label="Anchor link for:  7" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>小号文本</h3>
+  <p>对于不需要强调的inline或block类型的文本，使用 <code>&lt;small&gt;</code> 标签包裹，其内的文本将被设置为父容器字体大小的 85%。标题元素中嵌套的 <code>&lt;small&gt;</code> 元素被设置不同的 <code>font-size</code> 。</p>
+  <p>你还可以为行内元素赋予 <code>.small</code> 类以代替任何 <code>&lt;small&gt;</code> 元素。</p>
+  <div class="bs-example" data-example-id="simple-small">
+    <p><small>This line of text is meant to be treated as fine print.</small></p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;small&gt;</span>This line of text is meant to be treated as fine print.<span class="nt">&lt;/small&gt;</span></code></pre>
+  </div>
+  <h3 id="-8"><a class="anchorjs-link " href="#-8" aria-label="Anchor link for:  8" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>着重</h3>
+  <p>通过增加 font-weight 值强调一段文本。</p>
+  <div class="bs-example" data-example-id="simple-strong">
+    <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;strong&gt;</span>rendered as bold text<span class="nt">&lt;/strong&gt;</span></code></pre>
+  </div>
+  <h3 id="-9"><a class="anchorjs-link " href="#-9" aria-label="Anchor link for:  9" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>斜体</h3>
+  <p>用斜体强调一段文本。</p>
+  <div class="bs-example" data-example-id="simple-em">
+    <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;em&gt;</span>rendered as italicized text<span class="nt">&lt;/em&gt;</span></code></pre>
+  </div>
+  <div class="bs-callout bs-callout-info" id="callout-type-b-i-elems">
+    <h4>Alternate elements</h4>
+    <p>在 HTML5 中可以放心使用 <code>&lt;b&gt;</code> 和 <code>&lt;i&gt;</code> 标签。<code>&lt;b&gt;</code> 用于高亮单词或短语，不带有任何着重的意味；而 <code>&lt;i&gt;</code> 标签主要用于发言、技术词汇等。</p>
+  </div>
+  <h2 id="type-alignment"><a class="anchorjs-link " href="#type-alignment" aria-label="Anchor link for: type alignment" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>对齐</h2>
+  <p>通过文本对齐类，可以简单方便的将文字重新对齐。</p>
+  <div class="bs-example" data-example-id="text-alignment">
+    <p class="text-left">Left aligned text.</p>
+    <p class="text-center">Center aligned text.</p>
+    <p class="text-right">Right aligned text.</p>
+    <p class="text-justify">Justified text.</p>
+    <p class="text-nowrap">No wrap text.</p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Left aligned text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Center aligned text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Right aligned text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>Justified text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-nowrap"</span><span class="nt">&gt;</span>No wrap text.<span class="nt">&lt;/p&gt;</span></code></pre>
+  </div>
+  <h2 id="type-transformation"><a class="anchorjs-link " href="#type-transformation" aria-label="Anchor link for: type transformation" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>改变大小写</h2>
+  <p>通过这几个类可以改变文本的大小写。</p>
+  <div class="bs-example" data-example-id="text-capitalization">
+    <p class="text-lowercase">Lowercased text.</p>
+    <p class="text-uppercase">Uppercased text.</p>
+    <p class="text-capitalize">Capitalized text.</p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lowercase"</span><span class="nt">&gt;</span>Lowercased text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-uppercase"</span><span class="nt">&gt;</span>Uppercased text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-capitalize"</span><span class="nt">&gt;</span>Capitalized text.<span class="nt">&lt;/p&gt;</span></code></pre>
+  </div>
+  <h2 id="type-abbreviations"><a class="anchorjs-link " href="#type-abbreviations" aria-label="Anchor link for: type abbreviations" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>缩略语</h2>
+  <p>当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 <code>&lt;abbr&gt;</code> 元素的增强样式。缩略语元素带有 <code>title</code> 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有"问号"的指针。如想看完整的内容可把鼠标悬停在缩略语上（对使用辅助技术的用户也可见）, 但需要包含 title 属性。</p>
+  <h3 id="-10"><a class="anchorjs-link " href="#-10" aria-label="Anchor link for:  10" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>基本缩略语</h3>
+  <div class="bs-example" data-example-id="simple-abbr">
+    <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"attribute"</span><span class="nt">&gt;</span>attr<span class="nt">&lt;/abbr&gt;</span></code></pre>
+  </div>
+  <h2 id="type-lists"><a class="anchorjs-link " href="#type-lists" aria-label="Anchor link for: type lists" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>列表</h2>
+  <h3 id="-16"><a class="anchorjs-link " href="#-16" aria-label="Anchor link for:  16" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>无序列表</h3>
+  <p>排列顺序<em>无关紧要</em>的一列元素。</p>
+  <div class="bs-example" data-example-id="simple-ul">
+    <ul>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Integer molestie lorem at massa</li>
+      <li>Facilisis in pretium nisl aliquet</li>
+      <li>Nulla volutpat aliquam velit
+        <ul>
+          <li>Phasellus iaculis neque</li>
+          <li>Purus sodales ultricies</li>
+          <li>Vestibulum laoreet porttitor sem</li>
+          <li>Ac tristique libero volutpat at</li>
+        </ul>
+      </li>
+      <li>Faucibus porta lacus fringilla vel</li>
+      <li>Aenean sit amet erat nunc</li>
+      <li>Eget porttitor lorem</li>
+    </ul>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre>
+  </div>
+  <h3 id="-17"><a class="anchorjs-link " href="#-17" aria-label="Anchor link for:  17" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>有序列表</h3>
+  <p>顺序<em>至关重要</em>的一组元素。</p>
+  <div class="bs-example" data-example-id="simple-ol">
+    <ol>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Consectetur adipiscing elit</li>
+      <li>Integer molestie lorem at massa</li>
+      <li>Facilisis in pretium nisl aliquet</li>
+      <li>Nulla volutpat aliquam velit</li>
+      <li>Faucibus porta lacus fringilla vel</li>
+      <li>Aenean sit amet erat nunc</li>
+      <li>Eget porttitor lorem</li>
+    </ol>
+  </div>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="bs-docs-section">
+  <h1 id="helper-classes" class="page-header"><a class="anchorjs-link " href="#helper-classes" aria-label="Anchor link for: helper classes" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>辅助类</h1>
+  <h3 id="helper-classes-colors"><a class="anchorjs-link " href="#helper-classes-colors" aria-label="Anchor link for: helper classes colors" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>情境文本颜色</h3>
+  <p>通过颜色来展示意图，提供了一组工具类。这些类可以应用于链接，并且在鼠标经过时颜色可以还可以加深，就像默认的链接一样。</p>
+  <div class="bs-example" data-example-id="contextual-colors-helpers">
+    <p><a class="text-muted" href="javascript:;">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</a></p>
+    <p><a class="text-primary" href="javascript:;">Nullam id dolor id nibh ultricies vehicula ut id elit.</a></p>
+    <p><a class="text-success" href="javascript:;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</a></p>
+    <p><a class="text-info" href="javascript:;">Maecenas sed diam eget risus varius blandit sit amet non magna.</a></p>
+    <p><a class="text-warning" href="javascript:;">Etiam porta sem malesuada magna mollis euismod.</a></p>
+    <p><a class="text-danger" href="javascript:;">Donec ullamcorper nulla non metus auctor fringilla.</a></p>
+    <p><a class="text-white bg-black" href="javascript:;">------为了突出显示，增加了bg-black------</a></p>
+    <p><a class="text-black" href="javascript:;">Donec ullamcorper nulla non metus auctor fringilla.</a></p>
+  </div>
+  <div class="highlight">
+    <pre><code class="html">&lt;p class="text-muted"&gt;...&lt;/p&gt;
+&lt;p class="text-primary"&gt;...&lt;/p&gt;
+&lt;p class="text-success"&gt;...&lt;/p&gt;
+&lt;p class="text-info"&gt;...&lt;/p&gt;
+&lt;p class="text-warning"&gt;...&lt;/p&gt;
+&lt;p class="text-danger"&gt;...&lt;/p&gt;
+&lt;p class="text-white"&gt;...&lt;/p&gt;
+&lt;p class="text-black"&gt;...&lt;/p&gt;
+</code></pre>
+  </div>
+  <h3 id="helper-classes-backgrounds"><a class="anchorjs-link " href="#helper-classes-backgrounds" aria-label="Anchor link for: helper classes backgrounds" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>情境背景色</h3>
+  <p>和情境文本颜色类一样，使用任意情境背景色类就可以设置元素的背景。链接组件在鼠标经过时颜色会加深，就像上面所讲的情境文本颜色类一样。</p>
+  <div class="bs-example bs-example-bg-classes" data-example-id="contextual-backgrounds-helpers">
+    <p><a class="bg-primary text-white" href="javascript:;">------为了突出显示，增加了text-white------</a></p>
+    <p><a class="bg-success" href="javascript:;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</a></p>
+    <p><a class="bg-info" href="javascript:;">Maecenas sed diam eget risus varius blandit sit amet non magna.</a></p>
+    <p><a class="bg-warning" href="javascript:;">Etiam porta sem malesuada magna mollis euismod.</a></p>
+    <p><a class="bg-danger" href="javascript:;">Donec ullamcorper nulla non metus auctor fringilla.</a></p>
+    <p><a class="bg-whitesmoke" href="javascript:;">--------适合作为APP的默认背景色-------------</a></p>
+    <p><a class="bg-white" href="javascript:;">Using color to add meaning only provides a visual indication.</a></p>
+    <p><a class="bg-black text-white" href="javascript:;">------为了突出显示，增加了text-white------</a></p>
+  </div>
+  <div class="highlight">
+    <pre><code class="html">&lt;p class="bg-primary"&gt;...&lt;/p&gt;
+&lt;p class="bg-success"&gt;...&lt;/p&gt;
+&lt;p class="bg-info"&gt;...&lt;/p&gt;
+&lt;p class="bg-warning"&gt;...&lt;/p&gt;
+&lt;p class="bg-danger"&gt;...&lt;/p&gt;
+&lt;p class="bg-whitesmoke"&gt;...&lt;/p&gt;
+&lt;p class="bg-white"&gt;...&lt;/p&gt;
+&lt;p class="bg-black"&gt;...&lt;/p&gt;
+</code></pre>
+  </div>
+  <h3 id="helper-classes-center"><a class="anchorjs-link " href="#helper-classes-center" aria-label="Anchor link for: helper classes center" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>让内容块居中</h3>
+  <p>为任意元素设置 <code>display: block</code> 属性并通过 <code>margin</code> 属性让其中的内容居中。下面列出的类还可以作为 mixin 使用。</p>
+  <div class="highlight">
+    <pre><code class="html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"center-block"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre>
+  </div>
+  <div class="highlight">
+    <pre><code class="scss" data-lang="scss"><span class="c1">// Class </span><span class="nc">.center-block</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Usage as a mixin
+</span><span class="nc">.element</span> <span class="p">{</span>
+  <span class="nc">.center-block</span><span class="o">()</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
+  </div>
+  <h3 id="helper-classes-clearfix"><a class="anchorjs-link " href="#helper-classes-clearfix" aria-label="Anchor link for: helper classes clearfix" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>清除浮动</h3>
+  <p><strong>通过为父元素</strong>添加 <code>.clearfix</code> 类可以很容易地清除浮动（<code>float</code>）。这里所使用的是 Nicolas Gallagher 创造的 <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro clearfix</a> 方式。此类还可以作为 mixin 使用。</p>
+  <div class="highlight">
+    <pre><code class="html" data-lang="html"><span class="c">&lt;!-- Usage as a class --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre>
+  </div>
+  <div class="highlight">
+    <pre><code class="scss" data-lang="scss"><span class="c1">// Mixin itself </span><span class="nc">.clearfix</span><span class="o">()</span> <span class="p">{</span>
+  <span class="k">&amp;</span><span class="nd">:before</span><span class="o">,</span>
+  <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
+    <span class="nl">content</span><span class="p">:</span> <span class="s2">" "</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">table</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
+    <span class="nl">clear</span><span class="p">:</span> <span class="nb">both</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Usage as a mixin
+</span><span class="nc">.element</span> <span class="p">{</span>
+  <span class="nc">.clearfix</span><span class="o">()</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
+  </div>
+  <h3 id="helper-classes-show-hide"><a class="anchorjs-link " href="#helper-classes-show-hide" aria-label="Anchor link for: helper classes show hide" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>显示或隐藏内容</h3>
+  <p><code>.show</code> 和 <code>.hidden</code> 类可以强制任意元素显示或隐藏(<strong>对于屏幕阅读器也能起效</strong>)。这些类通过 <code>!important</code> 来避免 CSS 样式优先级问题，就像 <a href="#helper-classes-floats">quick floats</a> 一样的做法。注意，这些类只对块级元素起作用，另外，还可以作为 mixin 使用。</p>
+  <p><code>.hide</code> 类仍然可用，但是它不能对屏幕阅读器起作用，并且从 v3.0.1 版本开始就<strong>不建议使用</strong>了。请使用 <code>.hidden</code> 或 <code>.sr-only</code> 。</p>
+  <p>另外，<code>.invisible</code> 类可以被用来仅仅影响元素的可见性，也就是所，元素的 <code>display</code> 属性不被改变，并且这个元素仍然能够影响文档流的排布。</p>
+  <div class="highlight">
+    <pre><code class="html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"show"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre>
+  </div>
+  <div class="highlight">
+    <pre><code class="scss" data-lang="scss">// Classes .show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+// Usage as mixins
+.element {
+  .show();
+}
+.another-element {
+  .hidden();
+}</code></pre>
+  </div>
+</div>
+</body>
+</html>
