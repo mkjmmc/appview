@@ -6,9 +6,9 @@
 * {font-size:14px}
 [data-dpr="2"] * {font-size:28px}
 [data-dpr="3"] * {font-size:42px}
-.text-xs {font-size:9px}
-[data-dpr="2"] .text-xs {font-size:18px}
-[data-dpr="3"] .text-xs {font-size:27px}
+.text-xs {font-size:10px}
+[data-dpr="2"] .text-xs {font-size:20px}
+[data-dpr="3"] .text-xs {font-size:30px}
 .text-s {font-size:12px}
 [data-dpr="2"] .text-s {font-size:24px}
 [data-dpr="3"] .text-s {font-size:36px}

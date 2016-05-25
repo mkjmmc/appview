@@ -25,7 +25,7 @@
   <p>在iPhone3G和iPhone4的Retina屏下面，我们希望看到的文本字号是相同的。也就是说，我们不希望文本在Retina屏幕下变小，另外，我们希望在大屏手机上看到更多文本，以及，现在绝大多数的字体文件都自带一些点阵尺寸，通常是<code>16px</code>和<code>24px</code>，所以我们不希望出现<code>13px</code>和<code>15px</code>这样的奇葩尺寸。
     如此一来，就决定了在制作H5的页面中，<code>rem</code>并不适合用到段落文本上。所以在Flexible整个适配方案中，考虑文本还是使用<code>px</code>作为单位。只不过使用<code>[data-dpr]</code>属性来区分不同<code>dpr</code>下的文本字号大小。</p>
   <div class="bs-example" data-example-id="text-alignment">
-    <p class="text-xs">9px字体，在有些浏览器有最小字体限制，可能无法正常显示.</p>
+    <p class="text-xs">10px字体，在有些浏览器有最小字体限制，可能无法正常显示.</p>
     <p class="text-s">12px字体，适用于描述性文字.</p>
     <p class="text-m">14px字体，默认字体大小.</p>
     <p class="text-l">16px字体，稍大.</p>
@@ -33,7 +33,7 @@
     <p class="text-xxl">24px字体，适用于标题.</p>
   </div>
   <div class="highlight">
-    <pre><code class="html">&lt;p class="text-xs"&gt;9px字体，在有些浏览器有最小字体限制，可能无法正常显示.&lt;/p&gt;
+    <pre><code class="html">&lt;p class="text-xs"&gt;10px字体，在有些浏览器有最小字体限制，可能无法正常显示.&lt;/p&gt;
 &lt;p class="text-s"&gt;12px字体，适用于描述性文字.&lt;/p&gt;
 &lt;p class="text-m"&gt;14px字体，默认字体大小.&lt;/p&gt;
 &lt;p class="text-l"&gt;16px字体，稍大.&lt;/p&gt;

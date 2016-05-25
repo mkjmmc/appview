@@ -1,4 +1,4 @@
-﻿.view-list { }
+﻿.view-list { width:10rem;margin: 0 auto;}
 .view { display: block; }
 /* 列布局 */
 .view-flex{ display: -webkit-box;
@@ -44,6 +44,7 @@
     bottom:0;
     left:0;
     right: 0;
+    z-index: 9999999;
 }
 .view-tabbar a{
     -webkit-box-flex: 1;
@@ -56,12 +57,14 @@
     /* display: block; */
     font-size: 10px;
     color:#5D656B;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .view-tabbar a{color:#5D656B; }
 .view-tabbar a:hover,.view-tabbar a:active,.view-tabbar a:visited{text-decoration: none;}
-.view-tabbar a span{font-size: 22px; cursor: pointer;}
-[data-dpr="2"] .view-tabbar a span{font-size: 44px;}
-[data-dpr="3"] .view-tabbar a span{font-size: 66px;}
+.view-tabbar a i{font-size: 22px; cursor: pointer;}
+[data-dpr="2"] .view-tabbar a i{font-size: 44px;}
+[data-dpr="3"] .view-tabbar a i{font-size: 66px;}
 .view-tabbar a p{font-size: 10px; margin: 0;}
 [data-dpr="2"] .view-tabbar a p{font-size: 20px;}
 [data-dpr="3"] .view-tabbar a p{font-size: 30px;}
@@ -88,7 +91,9 @@
     position: fixed;
     top:0;
     left:0;
-    right: 0;}
+    right: 0;
+    z-index: 9999999;
+}
 .view-titlebar-text{ padding: .3rem;text-align: center;flex:1}
 .view-titlebar-lefticon{ display: block; align-self:center; padding: .3rem;}
 .view-titlebar-righticon{display: block;}
