@@ -3,6 +3,9 @@
 
 
 /* 字体设置 */
+* {font-size:14px}
+[data-dpr="2"] * {font-size:28px}
+[data-dpr="3"] * {font-size:42px}
 .text-xs {font-size:9px}
 [data-dpr="2"] .text-xs {font-size:18px}
 [data-dpr="3"] .text-xs {font-size:27px}
@@ -18,3 +21,6 @@
 .text-xl {font-size:18px}
 [data-dpr="2"] .text-xl {font-size:36px}
 [data-dpr="3"] .text-xl {font-size:54px}
+.text-xxl {font-size:24px}
+[data-dpr="2"] .text-xxl {font-size:48px}
+[data-dpr="3"] .text-xxl {font-size:72px}
