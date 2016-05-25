@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../build/flexible.js"></script>
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../build/base.css" />
+    <link type="text/css" rel="stylesheet" href="../build/font.css" />
+    <link type="text/css" rel="stylesheet" href="../build/view.css" />
+    <link type="text/css" rel="stylesheet" href="css/doc.css" />
+    <link rel="stylesheet" href="highlight/styles/github.css">
+    <script type="text/javascript" src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>View</title>
+</head>
+<body>
+<div class="bs-docs-section">
+    <h1 class="page-header">视图</h1>
+    <h2>基本视图</h2>
+    <p>我们定义一种组成APP界面的最基本的元素：<code>View</code>，所有的APP界面都由各种<code>View</code>组成。<br />所以我们在网页的最外层包裹一个<code>.view-list</code>作为最基础的视图</p>
+    <div class="highlight">
+        <pre><code class="html">&lt;div class="view-list"&gt;
+    &lt;div class="view"&gt;...&lt;/div&gt;
+    &lt;div class="view"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    <h2>线性布局</h2>
+    <p>该布局由上到下按顺序堆叠</p>
+    <div class="highlight">
+        <pre><code class="html">&lt;div class="view-list"&gt;
+    &lt;div class="view"&gt;...&lt;/div&gt;
+    &lt;div class="view"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    <p>CSS：</p>
+    <div class="highlight">
+        <pre><code class="css">.view { display: block; }</code></pre>
+    </div>
+    <h2>列布局</h2>
+    <p>列布局可以将<code>View</code>进行竖向分隔，该布局使用了<code>flex布局</code></p>
+    <p>四个元素</p>
+
+    <div class="bs-example" data-example-id="simple-s">
+        <div class="view view-flex">
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+            <div class="view-flex-item">4</div>
+        </div>
+    </div>
+    <div class="highlight">
+        <pre><code class="html">&lt;div class=&quot;view view-flex&quot;&gt;
+    &lt;div class=&quot;view-flex-item&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;view-flex-item&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;view-flex-item&quot;&gt;3&lt;/div&gt;
+    &lt;div class=&quot;view-flex-item&quot;&gt;4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    <p>10个元素</p>
+    <div class="bs-example" data-example-id="simple-s">
+        <div class="view view-flex">
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+            <div class="view-flex-item">4</div>
+            <div class="view-flex-item">5</div>
+            <div class="view-flex-item">6</div>
+            <div class="view-flex-item">7</div>
+            <div class="view-flex-item">8</div>
+            <div class="view-flex-item">9</div>
+            <div class="view-flex-item">10</div>
+        </div>
+    </div>
+    <p>20个元素</p>
+    <div class="bs-example" data-example-id="simple-s">
+        <div class="view view-flex">
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+            <div class="view-flex-item">4</div>
+            <div class="view-flex-item">5</div>
+            <div class="view-flex-item">6</div>
+            <div class="view-flex-item">7</div>
+            <div class="view-flex-item">8</div>
+            <div class="view-flex-item">9</div>
+            <div class="view-flex-item">10</div>
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+            <div class="view-flex-item">4</div>
+            <div class="view-flex-item">5</div>
+            <div class="view-flex-item">6</div>
+            <div class="view-flex-item">7</div>
+            <div class="view-flex-item">8</div>
+            <div class="view-flex-item">9</div>
+            <div class="view-flex-item">10</div>
+        </div>
+    </div>
+    <h3>换行</h3>
+    <p>如果需要设置列布局自动换行，只需要增加样式<code>view-flex-wrap</code></p>
+    <p>20个元素</p>
+    <div class="bs-example" data-example-id="simple-s">
+        <div class="view view-flex view-flex-wrap">
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+            <div class="view-flex-item">4</div>
+            <div class="view-flex-item">5</div>
+            <div class="view-flex-item">6</div>
+            <div class="view-flex-item">7</div>
+            <div class="view-flex-item">8</div>
+            <div class="view-flex-item">9</div>
+            <div class="view-flex-item">10</div>
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+            <div class="view-flex-item">4</div>
+            <div class="view-flex-item">5</div>
+            <div class="view-flex-item">6</div>
+            <div class="view-flex-item">7</div>
+            <div class="view-flex-item">8</div>
+            <div class="view-flex-item">9</div>
+            <div class="view-flex-item">10</div>
+        </div>
+    </div>
+    <div class="highlight">
+        <pre><code class="html">&lt;div class=&quot;view view-flex view-flex-wrap&quot;&gt;
+    &lt;div class=&quot;view-flex-item&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;view-flex-item&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;view-flex-item&quot;&gt;3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    <h3>对齐方式</h3>
+    <p>提供种5对齐方式，<code>view-flex-start</code>，<code>view-flex-end</code>，<code>view-flex-center</code>，<code>view-flex-space-between</code>，<code>view-flex-space-around</code></p>
+    <h4>view-flex-start</h4>
+    <p>（默认值）：左对齐</p>
+    <div class="bs-example" data-example-id="simple-s">
+        <div class="view view-flex view-flex-start">
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+        </div>
+    </div>
+    <h4>view-flex-end</h4>
+    <p>右对齐</p>
+    <div class="bs-example" data-example-id="simple-s">
+        <div class="view view-flex view-flex-end">
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+        </div>
+    </div>
+    <h4>view-flex-center</h4>
+    <p>居中</p>
+    <div class="bs-example" data-example-id="simple-s">
+        <div class="view view-flex view-flex-center">
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+        </div>
+    </div>
+    <h4>view-flex-space-between</h4>
+    <p>两端对齐，项目之间的间隔都相等。</p>
+    <div class="bs-example" data-example-id="simple-s">
+        <div class="view view-flex view-flex-space-between">
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+        </div>
+    </div>
+    <h4>view-flex-space-around</h4>
+    <p>每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</p>
+    <div class="bs-example" data-example-id="simple-s">
+        <div class="view view-flex view-flex-space-around">
+            <div class="view-flex-item">1</div>
+            <div class="view-flex-item">2</div>
+            <div class="view-flex-item">3</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

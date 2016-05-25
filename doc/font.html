@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="telephone=no,email=no" name="format-detection">
+<script src="../build/flexible.js"></script>
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+<link type="text/css" rel="stylesheet" href="../build/base.css" />
+<link type="text/css" rel="stylesheet" href="../build/font.css" />
+<link type="text/css" rel="stylesheet" href="css/doc.css" />
+<link rel="stylesheet" href="highlight/styles/github.css">
+<script type="text/javascript" src="highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<title>Font</title>
+</head>
+<body>
+<div class="bs-docs-section">
+  <h1 id="type" class="page-header"><a class="anchorjs-link " href="#type" aria-label="Anchor link for: type" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>字体</h1>
+  <h2 id="type-alignment"><a class="anchorjs-link " href="#type-alignment" aria-label="Anchor link for: type alignment" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>字体大小</h2>
+  <p>通过设置样式，可以简单方便的设置文字大小，并兼容移动端显示。</p>
+  <p>文本字号不建议使用 <code>rem</code></p>
+  <p>在iPhone3G和iPhone4的Retina屏下面，我们希望看到的文本字号是相同的。也就是说，我们不希望文本在Retina屏幕下变小，另外，我们希望在大屏手机上看到更多文本，以及，现在绝大多数的字体文件都自带一些点阵尺寸，通常是<code>16px</code>和<code>24px</code>，所以我们不希望出现<code>13px</code>和<code>15px</code>这样的奇葩尺寸。
+    如此一来，就决定了在制作H5的页面中，<code>rem</code>并不适合用到段落文本上。所以在Flexible整个适配方案中，考虑文本还是使用<code>px</code>作为单位。只不过使用<code>[data-dpr]</code>属性来区分不同<code>dpr</code>下的文本字号大小。</p>
+  <div class="bs-example" data-example-id="text-alignment">
+    <p class="text-xs">9px字体，在有些浏览器有最小字体限制，可能无法正常显示.</p>
+    <p class="text-s">12px字体，适用于描述性文字.</p>
+    <p class="text-m">14px字体，默认字体大小.</p>
+    <p class="text-l">16px字体，稍大.</p>
+    <p class="text-xl">18px字体，适用于标题.</p>
+    <p class="text-xxl">24px字体，适用于标题.</p>
+  </div>
+  <div class="highlight">
+    <pre><code class="html">&lt;p class="text-xs"&gt;9px字体，在有些浏览器有最小字体限制，可能无法正常显示.&lt;/p&gt;
+&lt;p class="text-s"&gt;12px字体，适用于描述性文字.&lt;/p&gt;
+&lt;p class="text-m"&gt;14px字体，默认字体大小.&lt;/p&gt;
+&lt;p class="text-l"&gt;16px字体，稍大.&lt;/p&gt;
+&lt;p class="text-xl"&gt;18px字体，适用于标题.&lt;/p&gt;
+&lt;p class="text-xxl"&gt;24px字体，适用于标题.&lt;/p&gt;</code></pre>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
