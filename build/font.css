@@ -3,9 +3,6 @@
 
 
 /* 字体设置 */
-* {font-size:14px}
-[data-dpr="2"] * {font-size:28px}
-[data-dpr="3"] * {font-size:42px}
 .text-xs {font-size:10px}
 [data-dpr="2"] .text-xs {font-size:20px}
 [data-dpr="3"] .text-xs {font-size:30px}

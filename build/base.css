@@ -403,8 +403,8 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 -webkit-appearance: none;
 }
 
-
-.input-nb{ border: none;}
+.b-t-gainsboro{border-top: solid 1px #DCDCDC}
+.b-b-gainsboro{border-bottom: solid 1px #DCDCDC}
 
 .icon-xs{ width: .4rem;}
 .icon-s{ width: .75rem;}
@@ -477,29 +477,6 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 .l-h-m{ line-height:1.2}
 .l-h-l{ line-height:1.5}
 .l-h-xl{ line-height:2}
-
-.size-xxl {
-	width:4.6875rem
-}
-
-.size-xl {
-	width:3.75rem
-}
-.size-l {
-	width:2.1875rem
-}
-.size-m {
-	width:2rem
-}
-.size-s {
-	width:1.5625rem
-}
-.size-xs {
-	width:1.0625rem
-}
-.height-m{ height: 1.375rem;}
-.height-l{ height: 1.875rem;}
-.height-xl{ height: 2.625rem;}
 
 /* 元素居中 */
 .center-block {

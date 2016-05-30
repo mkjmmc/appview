@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../build/flexible.js"></script>
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../../build/base.css"/>
+    <link type="text/css" rel="stylesheet" href="../../build/font.css"/>
+    <link type="text/css" rel="stylesheet" href="../../build/view.css"/>
+    <link type="text/css" rel="stylesheet" href="http://frame.yingyutalk.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+    <script src="../../build/iscroll-lite.js"></script>
+    <script>
+        var myScroll;
+
+        function loaded() {
+            myScroll = new IScroll('.scroll-wrap', {});
+        }
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, false);
+    </script>
+    <title>消息</title>
+</head>
+<body class="" onload="loaded()">
+<div class="scrollview">
+    <div class="view view-titlebar">
+        <div class="view-titlebar-text text-l text-cut">消息</div>
+        <a class="view-titlebar-righticon"><i class="fa fa-search"></i></a>
+    </div>
+    <div class="scroll-wrap">
+        <div class="scroll-content">
+            <div class="view-list">
+                <div class="banner">
+                    asfafa
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="view view-tabbar">
+        <a href="message.html">
+            <i class="fa fa-comment"></i>
+
+            <p>消息</p>
+        </a>
+        <a href="contacts.html">
+            <i class="fa fa-list-ul"></i>
+
+            <p>通讯录</p>
+        </a>
+        <a href="discovery.html">
+            <i class="fa fa-search"></i>
+
+            <p>发现</p>
+        </a>
+        <a href="me.html">
+            <i class="fa fa-user"></i>
+
+            <p>我</p>
+        </a>
+    </div>
+</div>
+</body>
+</html>
