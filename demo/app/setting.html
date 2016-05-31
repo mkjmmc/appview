@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="fullscreen">
 <head>
     <meta charset="utf-8">
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -13,56 +13,58 @@
     <link type="text/css" rel="stylesheet" href="../../build/view.css"/>
     <link type="text/css" rel="stylesheet" href="http://frame.yingyutalk.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
     <style>
-        html, body {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
+
     </style>
     <script src="../../build/iscroll-lite.js"></script>
     <script>
         var myScroll;
 
         function loaded() {
-            myScroll = new IScroll('.scroll-wrap', {
-                preventDefault :false,
-                mouseWheel:true});
+            myScroll = new IScroll('.scroll-wrap', {});
         }
         document.addEventListener('touchmove', function (e) {
             e.preventDefault();
         }, false);
     </script>
-    <title>发现</title>
+    <title>设置</title>
 </head>
-<body class="" onload="loaded()">
+<body class="fullscreen" onload="loaded()">
 <div class="scrollview">
     <div class="view view-titlebar">
-        <div class="view-titlebar-text text-xl text-cut">发现</div>
+        <a class="view-titlebar-lefticon text-l" href="me.html"><i class="fa fa-angle-left"></i> <span>我</span></a>
+        <div class="view-titlebar-text text-xl text-cut">设置</div>
+        <a class="view-titlebar-righticon"></a>
     </div>
     <div class="scroll-wrap bg-whitesmoke">
         <div class="scroll-content">
             <div class="view-list">
                 <div class="view-table m-t-l">
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
                         <div>
-                            <span>朋友圈</span>
+                            <span>账号与安全</span>
+                            <small>
+                                <i class="fa fa-lock text-success"></i>
+                                已保护</small>
                             <i class="fa fa-angle-right "></i>
                         </div>
                     </a>
                 </div>
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
                         <div>
-                            <span>扫一扫</span>
+                            <span>新消息通知</span>
                             <i class="fa fa-angle-right "></i>
                         </div>
                     </a>
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
                         <div>
-                            <span>摇一摇</span>
+                            <span>隐私</span>
+                            <i class="fa fa-angle-right "></i>
+                        </div>
+                    </a>
+                    <a class="view-table-cell">
+                        <div>
+                            <span>通用</span>
                             <i class="fa fa-angle-right "></i>
                         </div>
                     </a>
@@ -70,53 +72,26 @@
 
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
                         <div>
-                            <span>附近的人</span>
+                            <span>帮助与反馈</span>
+                            <i class="fa fa-angle-right "></i>
+                        </div>
+                    </a>
+                    <a class="view-table-cell">
+                        <div>
+                            <span>关于</span>
                             <i class="fa fa-angle-right "></i>
                         </div>
                     </a>
                 </div>
+
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
-                        <div>
-                            <span>购物</span>
-                            <i class="fa fa-angle-right "></i>
-                        </div>
-                    </a>
-                    <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
-                        <div>
-                            <span>游戏</span>
-                            <i class="fa fa-angle-right "></i>
-                        </div>
+                            <span class="text-center">退出登录</span>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="view view-tabbar">
-        <a href="message.html">
-            <i class="fa fa-comment"></i>
-
-            <p>消息</p>
-        </a>
-        <a href="contacts.html">
-            <i class="fa fa-list-ul"></i>
-
-            <p>通讯录</p>
-        </a>
-        <a href="discovery.html">
-            <i class="fa fa-search"></i>
-
-            <p>发现</p>
-        </a>
-        <a href="me.html">
-            <i class="fa fa-user"></i>
-
-            <p>我</p>
-        </a>
     </div>
 </div>
 </body>

@@ -19,29 +19,94 @@
             overflow: hidden;
         }
     </style>
-    <script src="../../build/iscroll-lite.js"></script>
+    <script src="../../build/iscroll.js"></script>
     <script>
         var myScroll;
 
         function loaded() {
-            myScroll = new IScroll('.scroll-wrap', {});
+            myScroll = new IScroll('.scroll-wrap', {
+                preventDefault :false,
+                mouseWheel:true
+            });
         }
+        /*
         document.addEventListener('touchmove', function (e) {
             e.preventDefault();
         }, false);
+        */
     </script>
     <title>我</title>
 </head>
 <body class="" onload="loaded()">
 <div class="scrollview">
     <div class="view view-titlebar">
-        <div class="view-titlebar-text text-l text-cut">我</div>
+        <div class="view-titlebar-text text-xl text-cut">我</div>
     </div>
-    <div class="scroll-wrap">
+    <div class="scroll-wrap bg-whitesmoke">
         <div class="scroll-content">
             <div class="view-list">
-                <div class="banner">
-                    asfafa
+                <div class="view-table m-t-l">
+                    <a class="view-table-cell">
+                        <i class=""><img src="../images/photo.jpg" class="icon-xl img-rounded"></i>
+                        <div>
+                            <span>
+                                啦啦啦
+                                <div class="text-m m-t-xs">微信号：hilxitmixt</div>
+                            </span>
+                            <i class="fa fa-qrcode text-xxl text-muted"></i>
+                            <i class="fa fa-angle-right "></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="view-table m-t-xl">
+                    <a class="view-table-cell">
+                        <div>
+                            <i class="fa fa-search"></i>
+                            <span>相册</span>
+                            <i class="fa fa-angle-right "></i>
+                        </div>
+                    </a>
+                    <a class="view-table-cell">
+                        <div>
+                            <i class="fa fa-search"></i>
+                            <span>收藏</span>
+                            <i class="fa fa-angle-right "></i>
+                        </div>
+                    </a>
+                    <a class="view-table-cell">
+                        <div>
+                            <i class="fa fa-search"></i>
+                            <span>钱包</span>
+                            <i class="fa fa-angle-right "></i>
+                        </div>
+                    </a>
+                    <a class="view-table-cell">
+                        <div>
+                            <i class="fa fa-search"></i>
+                            <span>卡券</span>
+                            <i class="fa fa-angle-right "></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="view-table m-t-xl">
+                    <a class="view-table-cell">
+                        <div>
+                            <i class="fa fa-search"></i>
+                            <span>表情</span>
+                            <i class="fa fa-angle-right "></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="view-table m-t-xl">
+                    <a class="view-table-cell" href="setting.html">
+                        <div>
+                            <i class="fa fa-cog"></i>
+                            <span>设置</span>
+                            <i class="fa fa-angle-right "></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

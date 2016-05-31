@@ -240,7 +240,7 @@ img {
 }
 /* 图片圆角 */
 .img-rounded {
-  border-radius: 6px;
+  border-radius: .16rem;
 }
 /* 图片圆型 */
 .img-circle {

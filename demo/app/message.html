@@ -24,7 +24,10 @@
         var myScroll;
 
         function loaded() {
-            myScroll = new IScroll('.scroll-wrap', {});
+            myScroll = new IScroll('.scroll-wrap', {
+                preventDefault: false,
+                mouseWheel: true
+            });
         }
         document.addEventListener('touchmove', function (e) {
             e.preventDefault();
@@ -35,14 +38,25 @@
 <body class="" onload="loaded()">
 <div class="scrollview">
     <div class="view view-titlebar">
-        <div class="view-titlebar-text text-l text-cut">消息</div>
+        <a class="view-titlebar-lefticon"></a>
+        <div class="view-titlebar-text text-xl text-cut">消息</div>
         <a class="view-titlebar-righticon"><i class="fa fa-search"></i></a>
     </div>
-    <div class="scroll-wrap">
+    <div class="scroll-wrap bg-whitesmoke">
         <div class="scroll-content">
             <div class="view-list">
-                <div class="banner">
-                    asfafa
+                <div class="view-table">
+                    <a class="view-table-cell">
+                        <div>
+                            <i class=""><img src="../images/photo.jpg" class="icon-l img-rounded"></i>
+                            <span>
+                                <div class="text-m">啦啦啦</div>
+                                <div class="text-s">微信号：hilxitmixt</div>
+                            </span>
+                            <i class="fa fa-qrcode text-xxl text-muted"></i>
+                            <i class="fa fa-angle-right "></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
