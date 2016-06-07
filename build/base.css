@@ -412,6 +412,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 .icon-l{ width:1.2rem;} /*45px*/
 .icon-xl{ width:1.875rem;}
 
+/* padding 规范 */
 .p-xs{ padding: .16rem}/*6px*/
 .p-s{ padding: .24rem}  /*9px*/
 .p-m{ padding: .32rem}  /*12px*/
@@ -445,7 +446,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 .p-b-xl{ padding-bottom: .75rem}
 .p-b-xxl{ padding-bottom: .64rem}/*24px*/
 
-
+/* margin 规范 */
 .m-a{ margin: 0 auto;}
 .m-xs{ margin: .16rem}
 .m-s{ margin: .24rem} /*9px*/
