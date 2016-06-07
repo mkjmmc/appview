@@ -41,6 +41,19 @@ HTML代码
 </div>
 ```
 
+## 不同分辨率下的显示效果
+Galaxy S5
+![Galaxy S5](http://appview.htmlid.cn/demo/images/wx-w-gs5.png)
+iPhone 5
+![iPhone 5](http://appview.htmlid.cn/demo/images/wx-w-i5.png)
+iPhone 6
+![iPhone 6](http://appview.htmlid.cn/demo/images/wx-w-i6.png)
+iPhone 6 plus
+![iPhone 6 plus](http://appview.htmlid.cn/demo/images/wx-w-i6p.png)
+iPad Mini
+![iPad Mini](http://appview.htmlid.cn/demo/images/wx-w-ipm.png)
+
+
 ## 样式(Base)
 基本样式库`base.css`定义了移动网页的基本样式，包括去除`body`的`margin`等
 

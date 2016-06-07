@@ -81,7 +81,7 @@
     border-bottom:1px solid #b2b2b2;
     z-index: 9999999;
 }
-.view-titlebar a{}
+.view-titlebar a{ color: inherit;}
 .view-titlebar a:hover{ text-decoration: none;}
 .view-titlebar-text{ padding: .36rem;text-align: center;}
 .view-titlebar-lefticon{ align-self:center; padding: .36rem;flex:1}
