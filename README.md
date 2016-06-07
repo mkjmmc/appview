@@ -3,8 +3,6 @@
 框架基于淘宝的移动端解决方案[flexible](https://github.com/amfe/lib-flexible)。
 实现了跨移动端的浏览器自适应框架。
 
-框架主要分为3块，定义了基本移动端网页样式
-
 * [首页](http://appview.htmlid.cn/)
 * [文档](http://appview.htmlid.cn/)
 * [Demo](http://appview.htmlid.cn/demo/)
@@ -13,6 +11,35 @@
 flexible: https://github.com/amfe/lib-flexible
 
 相关文章请参考[此处](https://github.com/amfe/article/issues/17)
+
+## 快速上手
+引用样式
+
+```html
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;../../build/base.css&quot;/&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;../../build/font.css&quot;/&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;../../build/view.css&quot;/&gt;
+```
+
+引用脚本
+```html
+&lt;script src=&quot;../../build/flexible.js&quot;&gt;&lt;/script&gt;
+```
+
+HTML代码
+```html
+&lt;div class=&quot;view-list&quot;&gt;
+    &lt;div class=&quot;view-table m-t-xl&quot;&gt;
+        &lt;a class=&quot;view-table-cell&quot;&gt;
+            &lt;div&gt;
+                &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+                &lt;span&gt;相册&lt;/span&gt;
+                &lt;i class=&quot;fa fa-angle-right &quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+```
 
 ## 样式(Base)
 基本样式库`base.css`定义了移动网页的基本样式，包括去除`body`的`margin`等
