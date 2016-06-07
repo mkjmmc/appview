@@ -16,29 +16,29 @@ flexible: https://github.com/amfe/lib-flexible
 引用样式
 
 ```html
-&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;../../build/base.css&quot;/&gt;
-&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;../../build/font.css&quot;/&gt;
-&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;../../build/view.css&quot;/&gt;
+<link type="text/css" rel="stylesheet" href="../../build/base.css"/>
+<link type="text/css" rel="stylesheet" href="../../build/font.css"/>
+<link type="text/css" rel="stylesheet" href="../../build/view.css"/>
 ```
 
 引用脚本
 ```html
-&lt;script src=&quot;../../build/flexible.js&quot;&gt;&lt;/script&gt;
+<script src="../../build/flexible.js"></script>
 ```
 
 HTML代码
 ```html
-&lt;div class=&quot;view-list&quot;&gt;
-    &lt;div class=&quot;view-table m-t-xl&quot;&gt;
-        &lt;a class=&quot;view-table-cell&quot;&gt;
-            &lt;div&gt;
-                &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
-                &lt;span&gt;相册&lt;/span&gt;
-                &lt;i class=&quot;fa fa-angle-right &quot;&gt;&lt;/i&gt;
-            &lt;/div&gt;
-        &lt;/a&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+<div class="view-list">
+    <div class="view-table m-t-xl">
+        <a class="view-table-cell">
+            <div>
+                <i class="fa fa-search"></i>
+                <span>相册</span>
+                <i class="fa fa-angle-right "></i>
+            </div>
+        </a>
+    </div>
+</div>
 ```
 
 ## 样式(Base)
