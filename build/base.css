@@ -226,12 +226,8 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-figure {
-  margin: 0;
-}
-img {
-  vertical-align: middle;
-}
+figure {margin: 0;}
+img {vertical-align: middle;}
 /* 图片缩放 */
 .img-responsive {
   display: block;
@@ -239,29 +235,15 @@ img {
   height: auto;
 }
 /* 图片圆角 */
-.img-rounded {
-  border-radius: .16rem;
-}
+.img-rounded {border-radius: .16rem;}
 /* 图片圆型 */
-.img-circle {
-  border-radius: 50%;
-}
+.img-circle {border-radius: 50%;}
 /* 对齐 */
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}
-.text-justify {
-  text-align: justify;
-}
-.text-nowrap {
-  white-space: nowrap;
-}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.text-justify {text-align: justify;}
+.text-nowrap {white-space: nowrap;}
 /* 字符串截取 */
 .text-cut {
 	overflow:hidden;
@@ -276,132 +258,62 @@ img {
 	-webkit-box-orient:vertical
 }
 /* 大小写 */
-.text-lowercase {
-  text-transform: lowercase;
-}
-.text-uppercase {
-  text-transform: uppercase;
-}
-.text-capitalize {
-  text-transform: capitalize;
-}
+.text-lowercase {text-transform: lowercase;}
+.text-uppercase {text-transform: uppercase;}
+.text-capitalize {text-transform: capitalize;}
 /* 情境文本颜色 */
-.text-muted {
-  color: #777;
-}
-.text-primary {
-  color: #337ab7;
-}
+.text-muted {color: #777;}
+.text-primary {color: #337ab7;}
 a.text-primary:hover,
-a.text-primary:focus {
-  color: #286090;
-}
-.text-success {
-  color: #3c763d;
-}
+a.text-primary:focus {color: #286090;}
+.text-success {color: #3c763d;}
 a.text-success:hover,
-a.text-success:focus {
-  color: #2b542c;
-}
-.text-info {
-  color: #31708f;
-}
+a.text-success:focus {color: #2b542c;}
+.text-info {color: #31708f;}
 a.text-info:hover,
-a.text-info:focus {
-  color: #245269;
-}
-.text-warning {
-  color: #8a6d3b;
-}
+a.text-info:focus {color: #245269;}
+.text-warning {color: #8a6d3b;}
 a.text-warning:hover,
-a.text-warning:focus {
-  color: #66512c;
-}
-.text-danger {
-  color: #a94442;
-}
+a.text-warning:focus {color: #66512c;}
+.text-danger {color: #a94442;}
 a.text-danger:hover,
-a.text-danger:focus {
-  color: #843534;
-}
-.text-white {
-  color: #ffffff;
-}
+a.text-danger:focus {color: #843534;}
+.text-white {color: #ffffff;}
 a.text-white:hover,
-a.text-white:focus {
-  color: #ffffff;
-}
-.text-black {
-  color: #000000;
-}
+a.text-white:focus {color: #ffffff;}
+.text-black {color: #000000;}
 a.text-black:hover,
-a.text-black:focus {
-  color: #000000;
-}
+a.text-black:focus {color: #000000;}
 
 /* 情境背景颜色 */
-.bg-primary {
-  background-color: #337ab7;
-}
+.bg-primary {background-color: #337ab7;}
 a.bg-primary:hover,
-a.bg-primary:focus {
-  background-color: #286090;
-}
-.bg-success {
-  background-color: #dff0d8;
-}
+a.bg-primary:focus {background-color: #286090;}
+.bg-success {background-color: #dff0d8;}
 a.bg-success:hover,
-a.bg-success:focus {
-  background-color: #c1e2b3;
-}
-.bg-info {
-  background-color: #d9edf7;
-}
+a.bg-success:focus {background-color: #c1e2b3;}
+.bg-info {background-color: #d9edf7;}
 a.bg-info:hover,
-a.bg-info:focus {
-  background-color: #afd9ee;
-}
-.bg-warning {
-  background-color: #fcf8e3;
-}
+a.bg-info:focus {background-color: #afd9ee;}
+.bg-warning {background-color: #fcf8e3;}
 a.bg-warning:hover,
-a.bg-warning:focus {
-  background-color: #f7ecb5;
-}
-.bg-danger {
-  background-color: #f2dede;
-}
+a.bg-warning:focus {background-color: #f7ecb5;}
+.bg-danger {background-color: #f2dede;}
 a.bg-danger:hover,
-a.bg-danger:focus {
-  background-color: #e4b9b9;
-}
-.bg-whitesmoke {
-  background-color: #f5f5f5;
-}
+a.bg-danger:focus {background-color: #e4b9b9;}
+.bg-whitesmoke {background-color: #f5f5f5;}
 a.bg-whitesmoke:hover,
-a.bg-whitesmoke:focus {
-  background-color: #D3D3D3;
-}
-.bg-white {
-  background-color: #ffffff;
-}
+a.bg-whitesmoke:focus {background-color: #D3D3D3;}
+.bg-white {background-color: #ffffff;}
 a.bg-white:hover,
-a.bg-white:focus {
-  background-color: #ffffff;
-}
-.bg-black {
-  background-color: #000000;
-}
+a.bg-white:focus {background-color: #ffffff;}
+.bg-black {background-color: #000000;}
 a.bg-black:hover,
-a.bg-black:focus {
-  background-color: #000000;
-}
+a.bg-black:focus {background-color: #000000;}
 
 	
 /* 移除按钮样式 */
-input[type="button"], input[type="submit"], input[type="reset"] {
--webkit-appearance: none;
-}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
 
 .b-t-gainsboro{border-top: solid 1px #DCDCDC}
 .b-b-gainsboro{border-bottom: solid 1px #DCDCDC}
@@ -419,12 +331,14 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 .p-l{ padding: .4rem}/*15px*/
 .p-xl{ padding: .75rem} /*18px*/
 .p-xxl{ padding: .64rem}/*24px*/
+
 .p-l-xs{ padding-left: .16rem}
 .p-l-s{ padding-left: .24rem}
 .p-l-m{ padding-left: .32rem}
 .p-l-l{ padding-left: .4rem}
 .p-l-xl{ padding-left: .75rem}
 .p-l-xxl{ padding-left: .64rem}/*24px*/
+
 .p-t-xs{ padding-top: .16rem}
 .p-t-s{ padding-top: .24rem}
 .p-t-m{ padding-top: .32rem}
@@ -486,19 +400,11 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   margin-left: auto;
 }
 /* 左右浮动 */
-.pull-right {
-  float: right !important;
-}
-.pull-left {
-  float: left !important;
-}
+.pull-right {float: right !important;}
+.pull-left {float: left !important;}
 /* 显示和隐藏 */
-.hide {
-  display: none !important;
-}
-.show {
-  display: block !important;
-}
+.hide {display: none !important;}
+.show {display: block !important;}
 /* 清除浮动 */
 .clearfix:before,
 .clearfix:after {
