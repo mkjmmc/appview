@@ -28,17 +28,35 @@ flexible: https://github.com/amfe/lib-flexible
 
 HTML代码
 ```html
-<div class="view-list">
-    <div class="view-table m-t-xl">
-        <a class="view-table-cell">
-            <div>
-                <i class="fa fa-search"></i>
-                <span>相册</span>
-                <i class="fa fa-angle-right "></i>
-            </div>
-        </a>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../../build/base.css"/>
+    <link type="text/css" rel="stylesheet" href="../../build/font.css"/>
+    <link type="text/css" rel="stylesheet" href="../../build/view.css"/>
+    <script src="../build/flexible.js"></script>
+    <title></title>
+</head>
+<body>
+    <div class="view-list">
+        <div class="view-table m-t-xl">
+            <a class="view-table-cell">
+                <div>
+                    <i class="fa fa-search"></i>
+                    <span>相册</span>
+                    <i class="fa fa-angle-right "></i>
+                </div>
+            </a>
+        </div>
     </div>
-</div>
+</body>
+</html>
 ```
 
 ## 不同分辨率下的显示效果
