@@ -26,7 +26,11 @@
 框架基于淘宝的移动端解决方案<a href="https://github.com/amfe/lib-flexible">flexible</a>。
 实现了跨移动端的浏览器自适应框架。</p>
 
-<p>框架主要分为3块，定义了基本移动端网页样式</p>
+<ul>
+<li><a href="http://appview.htmlid.cn/">首页</a></li>
+<li><a href="http://appview.htmlid.cn/">文档</a></li>
+<li><a href="http://appview.htmlid.cn/demo/">Demo</a></li>
+</ul>
 
 <h2>
 <a id="相关资料" class="anchor" href="#%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>相关资料</h2>
@@ -36,9 +40,109 @@
 <p>相关文章请参考<a href="https://github.com/amfe/article/issues/17">此处</a></p>
 
 <h2>
+<a id="快速上手" class="anchor" href="#%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>快速上手</h2>
+
+<p>引用样式</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/base.css<span class="pl-pds">"</span></span>/&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/font.css<span class="pl-pds">"</span></span>/&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/view.css<span class="pl-pds">"</span></span>/&gt;</pre></div>
+
+<p>引用脚本</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/flexible.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p>HTML代码</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span>&gt;
+&lt;<span class="pl-ent">head</span> <span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>yes<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>apple-mobile-web-app-capable<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>yes<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>apple-touch-fullscreen<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>telephone=no,email=no<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>format-detection<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>apple-touch-icon<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>favicon.png<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>Shortcut Icon<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>favicon.png<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>image/x-icon<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/base.css<span class="pl-pds">"</span></span>/&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/font.css<span class="pl-pds">"</span></span>/&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/view.css<span class="pl-pds">"</span></span>/&gt;
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../build/flexible.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+    &lt;<span class="pl-ent">title</span>&gt;&lt;/<span class="pl-ent">title</span>&gt;
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>view-list<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>view-table m-t-xl<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>view-table-cell<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">div</span>&gt;
+                    &lt;<span class="pl-ent">i</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>fa fa-search<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">i</span>&gt;
+                    &lt;<span class="pl-ent">span</span>&gt;相册&lt;/<span class="pl-ent">span</span>&gt;
+                    &lt;<span class="pl-ent">i</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>fa fa-angle-right <span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">i</span>&gt;
+                &lt;/<span class="pl-ent">div</span>&gt;
+            &lt;/<span class="pl-ent">a</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+
+<h2>
+<a id="不同分辨率下的显示效果" class="anchor" href="#%E4%B8%8D%E5%90%8C%E5%88%86%E8%BE%A8%E7%8E%87%E4%B8%8B%E7%9A%84%E6%98%BE%E7%A4%BA%E6%95%88%E6%9E%9C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>不同分辨率下的显示效果</h2>
+
+<table>
+<thead>
+<tr>
+<th>Galaxy S5</th>
+<th>iPhone 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="http://appview.htmlid.cn/demo/images/wx-w-gs5.png" alt="Galaxy S5"></td>
+<td><img src="http://appview.htmlid.cn/demo/images/wx-w-i5.png" alt="iPhone 5"></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>iPhone 6</th>
+<th>iPhone 6 plus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="http://appview.htmlid.cn/demo/images/wx-w-i6.png" alt="iPhone 6"></td>
+<td><img src="http://appview.htmlid.cn/demo/images/wx-w-i6p.png" alt="iPhone 6 plus"></td>
+</tr>
+</tbody>
+</table>
+
+<p>iPad Mini<br>
+<img src="http://appview.htmlid.cn/demo/images/wx-w-ipm.png" alt="iPad Mini"></p>
+
+<h2>
 <a id="样式base" class="anchor" href="#%E6%A0%B7%E5%BC%8Fbase" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>样式(Base)</h2>
 
-<p><code>base.css</code>定义了移动网页的基本样式，包括去除<code>body</code>的<code>margin</code>等</p>
+<p>基本样式库<code>base.css</code>定义了移动网页的基本样式，包括去除<code>body</code>的<code>margin</code>等</p>
+
+<p>样式包括：</p>
+
+<ul>
+<li>图片自适应</li>
+<li>图片圆角</li>
+<li>图片圆形</li>
+<li>文本对齐</li>
+<li>字符串截取</li>
+<li>大小写</li>
+<li>情境文本颜色</li>
+<li>情境背景颜色</li>
+<li>padding 规范 </li>
+<li>margin 规范</li>
+<li>元素居中</li>
+<li>左右浮动</li>
+<li>显示和隐藏</li>
+<li>清除浮动</li>
+</ul>
 
 <h2>
 <a id="字体font" class="anchor" href="#%E5%AD%97%E4%BD%93font" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>字体(Font)</h2>
@@ -66,6 +170,16 @@
 
 <h2>
 <a id="视图view" class="anchor" href="#%E8%A7%86%E5%9B%BEview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>视图(View)</h2>
+
+<p>视图<code>view.css</code>是基于基本样式的扩展，定义了部分移动端常用控件，只需要简单的html结构就可以实现原生控件效果，
+基本控件包括：</p>
+
+<ul>
+<li>列表</li>
+<li>TabBar</li>
+<li>TitleBar</li>
+<li>TableView</li>
+</ul>
 
 <h2>
 <a id="最新版本" class="anchor" href="#%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>最新版本</h2>
