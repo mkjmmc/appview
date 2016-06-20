@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="AppView - 简洁、直观、强悍、移动设备优先的前端开发框架，让app web开发更迅速、简单。">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, app, appview, fixable, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="毛可嘉">
+    <meta name="author" content="毛可嘉 <4824865@qq.com>">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="doc/css/doc.css"/>
+    <link type="text/css" rel="stylesheet" href="doc/css/github-light.css"/>
+    <title>AppView - 简洁、直观、强悍、移动设备优先的前端开发框架</title>
+</head>
+<body>
+<nav class="navbar navbar-static-top bs-docs-nav">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">AppView</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">开始</a></li>
+                <li><a href="doc/index.html">基础</a></li>
+                <li><a href="doc/font.html">字体</a></li>
+                <li><a href="doc/view.html">视图</a></li>
+                <li><a href="demo/">Demo</a></li>
+                <li><a href="doc/download.html">下载</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<header class="" id="content" role="main" tabindex="-1">
+    <div class="container p-l">
+        <h1 class="">AppView</h1>
+        <p class="text-xl">AppView 是一款简洁、直观、强悍、移动设备优先的前端开发框架，可以让app web开发更迅速、简单。</p>
+        <p class="">
+            <a href="https://github.com/mkjmmc/appview" class="btn btn-outline-inverse btn-lg">View on GitHub</a>
+            <a href="https://github.com/mkjmmc/appview/zipball/master" class="btn btn-outline-inverse btn-lg">下载 AppView</a>
+        </p>
+        <p class="text-xs">当前版本： v1.0.0 | 文档更新于：2016-06-20</p>
+    </div>
+</header>
+<div class="container text-m  p-l">
+    <div class="row">
+        <div class="col-md-9">
+            <section class="main-content">
+                <h1 id="js-overview">
+                    概览</h1>
+
+                <p>这是一个基础的移动端适应的样式框架，可以用来快速，简单的搭建移动端H5网页。
+                    框架基于淘宝的移动端解决方案<a href="https://github.com/amfe/lib-flexible">flexible</a>。
+                    实现了跨移动端的浏览器自适应框架。</p>
+
+                <ul>
+                    <li><a href="http://appview.htmlid.cn/">首页</a></li>
+                    <li><a href="http://appview.htmlid.cn/">文档</a></li>
+                    <li><a href="http://appview.htmlid.cn/demo/">Demo</a></li>
+                </ul>
+
+                <h1 id="about">
+                    相关资料</h1>
+
+                <p>flexible: <a href="https://github.com/amfe/lib-flexible">https://github.com/amfe/lib-flexible</a></p>
+
+                <p>相关文章请参考<a href="https://github.com/amfe/article/issues/17">此处</a></p>
+
+                <h1 id="quick">
+                    快速上手</h1>
+
+                <p>引用样式</p>
+
+                <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/base.css<span class="pl-pds">"</span></span>/&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/font.css<span class="pl-pds">"</span></span>/&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/view.css<span class="pl-pds">"</span></span>/&gt;</pre>
+                </div>
+
+                <p>引用脚本</p>
+
+                <div class="highlight highlight-text-html-basic">
+                    <pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/flexible.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre>
+                </div>
+
+                <p>HTML代码</p>
+
+                <div class="highlight highlight-text-html-basic"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span>&gt;
+&lt;<span class="pl-ent">head</span> <span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>yes<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>apple-mobile-web-app-capable<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>yes<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>apple-touch-fullscreen<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">content</span>=<span class="pl-s"><span class="pl-pds">"</span>telephone=no,email=no<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>format-detection<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>apple-touch-icon<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>favicon.png<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>Shortcut Icon<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>favicon.png<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>image/x-icon<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/base.css<span class="pl-pds">"</span></span>/&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/font.css<span class="pl-pds">"</span></span>/&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../../build/view.css<span class="pl-pds">"</span></span>/&gt;
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../build/flexible.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+    &lt;<span class="pl-ent">title</span>&gt;&lt;/<span class="pl-ent">title</span>&gt;
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>view-list<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>view-table m-t-xl<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">a</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>view-table-cell<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">div</span>&gt;
+                    &lt;<span class="pl-ent">i</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>fa fa-search<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">i</span>&gt;
+                    &lt;<span class="pl-ent">span</span>&gt;相册&lt;/<span class="pl-ent">span</span>&gt;
+                    &lt;<span class="pl-ent">i</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>fa fa-angle-right <span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">i</span>&gt;
+                &lt;/<span class="pl-ent">div</span>&gt;
+            &lt;/<span class="pl-ent">a</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre>
+                </div>
+
+                <h1 id="xianshixiaoguo">
+                    不同分辨率下的显示效果</h1>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Galaxy S5</th>
+                        <th>iPhone 5</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><img src="http://appview.htmlid.cn/demo/images/wx-w-gs5.png" alt="Galaxy S5" class="img-responsive"></td>
+                        <td><img src="http://appview.htmlid.cn/demo/images/wx-w-i5.png" alt="iPhone 5" class="img-responsive"></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>iPhone 6</th>
+                        <th>iPhone 6 plus</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><img src="http://appview.htmlid.cn/demo/images/wx-w-i6.png" alt="iPhone 6" class="img-responsive"></td>
+                        <td><img src="http://appview.htmlid.cn/demo/images/wx-w-i6p.png" alt="iPhone 6 plus" class="img-responsive"></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p>iPad Mini<br>
+                    <img src="http://appview.htmlid.cn/demo/images/wx-w-ipm.png" alt="iPad Mini" class="img-responsive"></p>
+
+                <h1 id="whats-included">包含的内容</h1>
+
+                <h2 id="whats-included-base">
+                    样式(Base)</h2>
+
+                <p>基本样式库<code>base.css</code>定义了移动网页的基本样式，包括去除<code>body</code>的<code>margin</code>等</p>
+
+                <p>样式包括：</p>
+
+                <ul>
+                    <li>图片自适应</li>
+                    <li>图片圆角</li>
+                    <li>图片圆形</li>
+                    <li>文本对齐</li>
+                    <li>字符串截取</li>
+                    <li>大小写</li>
+                    <li>情境文本颜色</li>
+                    <li>情境背景颜色</li>
+                    <li>padding 规范</li>
+                    <li>margin 规范</li>
+                    <li>元素居中</li>
+                    <li>左右浮动</li>
+                    <li>显示和隐藏</li>
+                    <li>清除浮动</li>
+                </ul>
+
+                <h2 id="whats-included-font">
+                    字体(Font)</h2>
+
+                <p><code>font.css</code>定义了基本的字体样式</p>
+
+                <p>通过设置样式，可以简单方便的设置文字大小，并兼容移动端显示。</p>
+
+                <p>在iPhone4和iPhone6的Retina屏下面，我们希望看到的文本字号是相同的。也就是说，我们不希望文本在Retina屏幕下变小，
+                    另外，我们希望在大屏手机上看到更多文本，以及，现在绝大多数的字体文件都自带一些点阵尺寸，通常是<code>16px</code>和<code>24px</code>，所以我们不希望出现<code>13px</code>和<code>15px</code>这样的奇葩尺寸。
+                    如此一来，就决定了在制作H5的页面中，<code>rem</code>并不适合用到段落文本上。所以在Flexible整个适配方案中，考虑文本还是使用<code>px</code>作为单位。只不过使用<code>[data-dpr]</code>属性来区分不同<code>dpr</code>下的文本字号大小。</p>
+
+                <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>text-xs<span class="pl-pds">"</span></span>&gt;10px字体，在有些浏览器有最小字体限制，可能无法正常显示.&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>text-s<span class="pl-pds">"</span></span>&gt;12px字体，适用于描述性文字.&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>text-m<span class="pl-pds">"</span></span>&gt;14px字体，默认字体大小.&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>text-l<span class="pl-pds">"</span></span>&gt;16px字体，稍大.&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>text-xl<span class="pl-pds">"</span></span>&gt;18px字体，适用于标题.&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>text-xxl<span class="pl-pds">"</span></span>&gt;24px字体，适用于标题.&lt;/<span class="pl-ent">p</span>&gt;</pre>
+                </div>
+
+                <p>我们定义了基本的字体大小<code>10px</code>,<code>12px</code>,<code>14px</code>,<code>16px</code>,<code>18px</code>,<code>24px</code>用于适配常见的网页字体，如果需要特殊的字号，可以自行添加样式如下</p>
+
+                <div class="highlight highlight-source-css"><pre><span class="pl-e">.text-xxl</span> {<span class="pl-c1"><span class="pl-c1">font-size</span></span>:<span class="pl-c1">24<span class="pl-k">px</span></span>}
+[data-dpr="2"] <span class="pl-e">.text-xxl</span> {<span class="pl-c1"><span class="pl-c1">font-size</span></span>:<span class="pl-c1">48<span class="pl-k">px</span></span>}
+[data-dpr="3"] <span class="pl-e">.text-xxl</span> {<span class="pl-c1"><span class="pl-c1">font-size</span></span>:<span class="pl-c1">72<span class="pl-k">px</span></span>}</pre>
+                </div>
+
+                <h2 id="whats-included-view">
+                    视图(View)</h2>
+
+                <p>视图<code>view.css</code>是基于基本样式的扩展，定义了部分移动端常用控件，只需要简单的html结构就可以实现原生控件效果，
+                    基本控件包括：</p>
+
+                <ul>
+                    <li>列表</li>
+                    <li>TabBar</li>
+                    <li>TitleBar</li>
+                    <li>TableView</li>
+                </ul>
+
+                <h1 id="reference-library">
+                    依赖库</h1>
+
+                <p>基于淘宝移动端解决方案flexible，github地址：
+                    <a href="https://github.com/amfe/lib-flexible">https://github.com/amfe/lib-flexible</a></p>
+
+                <p>完整引用举例
+                </p>
+
+                <h1 id="howtouse">
+                    使用方法</h1>
+
+                <p>建议对于js做<code>内联处理</code>，在所有资源加载之前执行这个js。</p>
+
+                <p>执行这个js后，会在<code>html</code>（也就是document.documentElement）上增加一个<code>data-dpr</code>属性，以及<code>font-size</code>样式。</p>
+
+                <p>之后页面中的元素，都可以用<code>rem</code>单位来设置。<code>html</code>上的<code>font-size</code>就是rem的基准像素。</p>
+
+                <h2 id="change">
+                    把视觉稿中的px转换成rem</h2>
+
+                <p>首先，目前视觉稿大小分为<code>640</code>，<code>750</code>以及，<code>1125</code>这三种。</p>
+
+                <p>当前方案会把这3类视觉稿分成<code>100</code>份来看待（为了以后兼容vh，vw单位）。每一份被称为一个单位a。同时，1rem单位认定为10a。拿750的视觉稿举例：</p>
+
+<pre><code>1a = 7.5px
+    1rem = 75px
+</code></pre>
+
+                <p>因此，对于视觉稿上的元素的尺寸换算，只需要<code>原始px值</code>除以<code>rem基准px值</code>即可。例如240px * 120px的元素，最后转换为3.2rem * 1.6rem。</p>
+            </section>
+        </div>
+        <div class="col-md-3">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                <ul class="nav bs-docs-sidenav">
+
+                    <li>
+                        <a href="#js-overview">概览</a>
+                    </li>
+                    <li>
+                        <a href="#about">相关资料</a>
+                    </li>
+                    <li>
+                        <a href="#quick">快速上手</a>
+                    </li>
+                    <li>
+                        <a href="#xianshixiaoguo">显示效果</a>
+                    </li>
+                    <li>
+                        <a href="#whats-included">包含内容</a>
+                        <ul class="nav">
+                            <li><a href="#whats-included-base">样式(Base)</a></li>
+                            <li><a href="#whats-included-font">字体(Font)</a></li>
+                            <li><a href="#whats-included-view">视图(View)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#reference-library">依赖库</a>
+                    </li>
+                    <li>
+                        <a href="#howtouse">使用方法</a>
+                    </li>
+                    <li>
+                        <a href="#change">把视觉稿中的px转换成rem</a>
+                    </li>
+                </ul>
+                <a class="back-to-top" href="#top">
+                    返回顶部
+                </a>
+
+            </nav>
+        </div>
+    </div>
+</div>
+<footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+
+        <p>作者：毛可嘉<a href="mailto:4824865@qq.com">4824865@qq.com</a></p>
+        <p>本项目源码受 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议保护，文档受 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a> 开源协议保护。</p>
+        <a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备16013852号-1</a>
+    </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('body').scrollspy({target: '.bs-docs-sidebar'})
+        setTimeout(function () {
+            var b = $(".bs-docs-sidebar");
+            b.affix({
+                offset: {
+                    top: function () {
+                        var c = b.offset().top,
+                                d = parseInt(b.children(0).css("margin-top"), 10),
+                                e = $(".bs-docs-nav").height();
+                        return this.top = c - e - d
+                    },
+                    bottom: function () {
+                        return this.bottom = $(".bs-docs-footer").outerHeight(!0)
+                    }
+                }
+            })
+        }, 100);
+        setTimeout(function () {
+            $(".bs-top").affix()
+        }, 100);
+    })
+
+</script>
+</body>
+</html>

@@ -1,12 +1,12 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 /* 基本样式设置 */
 html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+    margin: 0;
 }
 article,
 aside,
@@ -21,218 +21,218 @@ menu,
 nav,
 section,
 summary {
-  display: block;
+    display: block;
 }
 audio,
 canvas,
 progress,
 video {
-  display: inline-block;
-  vertical-align: baseline;
+    display: inline-block;
+    vertical-align: baseline;
 }
 audio:not([controls]) {
-  display: none;
-  height: 0;
+    display: none;
+    height: 0;
 }
 [hidden],
 template {
-  display: none;
+    display: none;
 }
 a {
-  background-color: transparent;
+    background-color: transparent;
 }
 a:active,
 a:hover {
-  outline: 0;
+    outline: 0;
 }
 abbr[title],
 abbr[data-original-title] {
-  cursor: help;
-  border-bottom: 1px dotted #777;
+    cursor: help;
+    border-bottom: 1px dotted #777;
 }
 b,
 strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 dfn {
-  font-style: italic;
+    font-style: italic;
 }
 mark {
-  color: #000;
-  background: #ff0;
+    color: #000;
+    background: #ff0;
 }
 small {
-  font-size: 80%;
+    font-size: 80%;
 }
 sub,
 sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
 }
 sup {
-  top: -.5em;
+    top: -.5em;
 }
 sub {
-  bottom: -.25em;
+    bottom: -.25em;
 }
 img {
-  border: 0;
+    border: 0;
 }
 svg:not(:root) {
-  overflow: hidden;
+    overflow: hidden;
 }
 figure {
-  margin: 1em 40px;
+    margin: 1em 40px;
 }
 hr {
-  height: 0;
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+    height: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 pre {
-  overflow: auto;
+    overflow: auto;
 }
 code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
+    font-family: monospace, monospace;
+    font-size: 1em;
 }
 button,
 input,
 optgroup,
 select,
 textarea {
-  margin: 0;
-  font: inherit;
-  color: inherit;
+    margin: 0;
+    font: inherit;
+    color: inherit;
 }
 button {
-  overflow: visible;
+    overflow: visible;
 }
 button,
 select {
-  text-transform: none;
+    text-transform: none;
 }
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
+    -webkit-appearance: button;
+    cursor: pointer;
 }
 button[disabled],
 html input[disabled] {
-  cursor: default;
+    cursor: default;
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+    padding: 0;
+    border: 0;
 }
 input {
-  line-height: normal;
+    line-height: normal;
 }
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
+    height: auto;
 }
 input[type="search"] {
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
-  -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
 fieldset {
-  padding: .35em .625em .75em;
-  margin: 0 2px;
-  border: 1px solid #c0c0c0;
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid #c0c0c0;
 }
 legend {
-  padding: 0;
-  border: 0;
+    padding: 0;
+    border: 0;
 }
 textarea {
-  overflow: auto;
+    overflow: auto;
 }
 optgroup {
-  font-weight: bold;
+    font-weight: bold;
 }
 table {
-  border-spacing: 0;
-  border-collapse: collapse;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 td,
 th {
-  padding: 0;
+    padding: 0;
 }
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+    font-size: 10px;
 
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
 }
 input,
 button,
 select,
 textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 a {
-  color: #337ab7;
-  text-decoration: none;
+    color: #337ab7;
+    text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
-  text-decoration: underline;
+    color: #23527c;
+    text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
 }
 figure {margin: 0;}
 img {vertical-align: middle;}
 /* 图片缩放 */
 .img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /* 图片圆角 */
 .img-rounded {border-radius: .16rem;}
@@ -246,16 +246,16 @@ img {vertical-align: middle;}
 .text-nowrap {white-space: nowrap;}
 /* 字符串截取 */
 .text-cut {
-	overflow:hidden;
-	text-overflow:ellipsis;
-	white-space:nowrap
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
 }
 .text-cut-2 {
-	overflow:hidden;
-	text-overflow:ellipsis;
-	display:-webkit-box;
-	-webkit-line-clamp:2;
-	-webkit-box-orient:vertical
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical
 }
 /* 大小写 */
 .text-lowercase {text-transform: lowercase;}
@@ -311,7 +311,7 @@ a.bg-white:focus {background-color: #ffffff;}
 a.bg-black:hover,
 a.bg-black:focus {background-color: #000000;}
 
-	
+
 /* 移除按钮样式 */
 input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
 
@@ -395,9 +395,9 @@ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appeara
 
 /* 元素居中 */
 .center-block {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 /* 左右浮动 */
 .pull-right {float: right !important;}
@@ -408,123 +408,29 @@ input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appeara
 /* 清除浮动 */
 .clearfix:before,
 .clearfix:after {
-  display: table;
-  content: " ";
+    display: table;
+    content: " ";
 }
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
 
-/* 容器 */
-.container{ width: 10rem; margin-left: auto; margin-right: auto;}
-
-/* 标题 */
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small,
-.h1 small,
-.h2 small,
-.h3 small,
-.h4 small,
-.h5 small,
-.h6 small,
-h1 .small,
-h2 .small,
-h3 .small,
-h4 .small,
-h5 .small,
-h6 .small,
-.h1 .small,
-.h2 .small,
-.h3 .small,
-.h4 .small,
-.h5 .small,
-.h6 .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #777;
-}
-h1 small,
-.h1 small,
-h2 small,
-.h2 small,
-h3 small,
-.h3 small,
-h1 .small,
-.h1 .small,
-h2 .small,
-.h2 .small,
-h3 .small,
-.h3 .small {
-  font-size: 65%;
-}
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-  margin-top: .56rem;
-  margin-bottom: .24rem;
-}
-h4 small,
-.h4 small,
-h5 small,
-.h5 small,
-h6 small,
-.h6 small,
-h4 .small,
-.h4 .small,
-h5 .small,
-.h5 .small,
-h6 .small,
-.h6 .small {
-  font-size: 75%;
-}
-h1 small,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  margin-top: .24rem;
-  margin-bottom: .24rem;
-}
-h1,
-.h1 {
-  font-size: .96rem;
-}
-h2,
-.h2 {
-  font-size: .8rem;
-}
-h3,
-.h3 {
-  font-size: .64rem;
-}
-h4,
-.h4 {
-  font-size: .48rem;
-}
-h5,
-.h5 {
-  font-size: .37rem;
-}
-h6,
-.h6 {
-  font-size: .32rem;
-}
-p {
-  margin: 0 0 .24rem;
-}
-
+/* 字体设置 */
+.text-xs {font-size:10px}
+[data-dpr="2"] .text-xs {font-size:20px}
+[data-dpr="3"] .text-xs {font-size:30px}
+.text-s {font-size:12px}
+[data-dpr="2"] .text-s {font-size:24px}
+[data-dpr="3"] .text-s {font-size:36px}
+.text-m {font-size:14px}
+[data-dpr="2"] .text-m {font-size:28px}
+[data-dpr="3"] .text-m {font-size:42px}
+.text-l {font-size:16px}
+[data-dpr="2"] .text-l {font-size:32px}
+[data-dpr="3"] .text-l {font-size:48px}
+.text-xl {font-size:18px}
+[data-dpr="2"] .text-xl {font-size:36px}
+[data-dpr="3"] .text-xl {font-size:54px}
+.text-xxl {font-size:24px}
+[data-dpr="2"] .text-xxl {font-size:48px}
+[data-dpr="3"] .text-xxl {font-size:72px}
