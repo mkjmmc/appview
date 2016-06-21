@@ -1,0 +1,26 @@
+{
+  "devDependencies": {},
+  "name": "appview",
+  "description": "这是一个基础的移动端适应的样式框架，可以用来快速，简单的搭建移动端H5网页。\r 框架基于淘宝的移动端解决方案[flexible](https://github.com/amfe/lib-flexible)。\r 实现了跨移动端的浏览器自适应框架。",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkjmmc/appview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkjmmc/appview/issues"
+  },
+  "homepage": "https://github.com/mkjmmc/appview#readme"
+}
