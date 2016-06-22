@@ -1,53 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-<meta name="description" content="AppView - 简洁、直观、强悍、移动设备优先的前端开发框架，让app web开发更迅速、简单。">
-<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, app, appview, fixable, bootstrap, front-end, frontend, web development">
-<meta name="author" content="毛可嘉">
-<meta name="author" content="毛可嘉 <4824865@qq.com>">
-<meta content="yes" name="apple-mobile-web-app-capable">
-<meta content="yes" name="apple-touch-fullscreen">
-<meta content="telephone=no,email=no" name="format-detection">
-<link rel="apple-touch-icon" href="favicon.png">
-<link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="../dist/css/appview.css"/>
-
-    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/doc.css"/>
-
-    <link type="text/css" rel="stylesheet" href="css/github-light.css"/>
-    <script type="text/javascript" src="highlight/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <title>Base - AppView - 简洁、直观、强悍、移动设备优先的前端开发框架</title>
-    
-</head>
-<body>
-<nav class="navbar navbar-static-top bs-docs-nav">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">AppView</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="../index.html">开始</a></li>
-
-                <li class="active"><a href="../doc/index.html">基础</a></li>
-
-                <li ><a href="../doc/font.html">字体</a></li>
-                <li ><a href="../doc/view.html">视图</a></li>
-                <li ><a href="../doc/demo.html">Demo</a></li>
-                <li ><a href="../doc/download.html">下载</a></li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-
+{% extends "layout/layout.twig" %}
+{% set view='base'%}
+{% block title %}Base{% endblock %}
+{% block content %}
 <header class="" id="content" role="main" tabindex="-1">
     <div class="container p-l">
         <h1 class="">基础</h1>
@@ -415,42 +369,4 @@
         </div>
     </div>
 </div>
-
-<footer class="bs-docs-footer" role="contentinfo">
-    <div class="container">
-
-        <p>作者：毛可嘉<a href="mailto:4824865@qq.com">4824865@qq.com</a></p>
-        <p>本项目源码受 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议保护，文档受 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a> 开源协议保护。</p>
-        <a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备16013852号-1</a>
-    </div>
-</footer>
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script>
-    $(function () {
-        $('body').scrollspy({target: '.bs-docs-sidebar'})
-        setTimeout(function () {
-            var b = $(".bs-docs-sidebar");
-            b.affix({
-                offset: {
-                    top: function () {
-                        var c = b.offset().top,
-                                d = parseInt(b.children(0).css("margin-top"), 10),
-                                e = $(".bs-docs-nav").height();
-                        return this.top = c - e - d
-                    },
-                    bottom: function () {
-                        return this.bottom = $(".bs-docs-footer").outerHeight(!0)
-                    }
-                }
-            })
-        }, 100);
-        setTimeout(function () {
-            $(".bs-top").affix()
-        }, 100);
-    })
-
-</script>
-
-</body>
-</html>
+{% endblock %}

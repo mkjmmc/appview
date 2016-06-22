@@ -1,0 +1,24 @@
+<nav class="navbar navbar-static-top bs-docs-nav">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">AppView</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">开始</a></li>
+
+                <li {% if view == 'base'%}class="active"{% endif %}><a href="../doc/index.html">基础</a></li>
+
+                <li {% if view == 'font'%}class="active"{% endif %}><a href="../doc/font.html">字体</a></li>
+                <li {% if view == 'view'%}class="active"{% endif %}><a href="../doc/view.html">视图</a></li>
+                <li {% if view == 'demo'%}class="active"{% endif %}><a href="../doc/demo.html">Demo</a></li>
+                <li {% if view == 'download'%}class="active"{% endif %}><a href="../doc/download.html">下载</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

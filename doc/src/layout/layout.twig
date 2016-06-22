@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include '../include/meta.html' %}
+    <link type="text/css" rel="stylesheet" href="../dist/css/appview.css"/>
+
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/doc.css"/>
+
+    <link type="text/css" rel="stylesheet" href="css/github-light.css"/>
+    <script type="text/javascript" src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>{% block title %}{% endblock %} - AppView - 简洁、直观、强悍、移动设备优先的前端开发框架</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+{% include '../include/nav.html' %}
+{% block content %}{% endblock %}
+<footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+
+        <p>作者：毛可嘉<a href="mailto:4824865@qq.com">4824865@qq.com</a></p>
+        <p>本项目源码受 <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>开源协议保护，文档受 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a> 开源协议保护。</p>
+        <a href="http://www.miitbeian.gov.cn" target="_blank">浙ICP备16013852号-1</a>
+    </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('body').scrollspy({target: '.bs-docs-sidebar'})
+        setTimeout(function () {
+            var b = $(".bs-docs-sidebar");
+            b.affix({
+                offset: {
+                    top: function () {
+                        var c = b.offset().top,
+                                d = parseInt(b.children(0).css("margin-top"), 10),
+                                e = $(".bs-docs-nav").height();
+                        return this.top = c - e - d
+                    },
+                    bottom: function () {
+                        return this.bottom = $(".bs-docs-footer").outerHeight(!0)
+                    }
+                }
+            })
+        }, 100);
+        setTimeout(function () {
+            $(".bs-top").affix()
+        }, 100);
+    })
+
+</script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

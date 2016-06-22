@@ -1,0 +1,66 @@
+{% extends "layout/layout.twig" %}
+{% set view='demo'%}
+{% block title %}Demo{% endblock %}
+{% block content %}
+<header class="" id="content" role="main" tabindex="-1">
+    <div class="container p-l">
+        <h1 class="">示例</h1>
+        <p class="text-xl">使用appview框架可以简单、快速的搭建移动端适应网页。</p>
+    </div>
+</header>
+<div class="container text-m  p-l">
+    <div class="row">
+        <div class="col-md-9">
+            <ul>
+<li><a href="../demo/titlebar.html">titlebar</a></li>
+<li><a href="../demo/tabbar.html">tabbar</a></li>
+<li><a href="../demo/tabbar-notext.html">tabbar-notext</a></li>
+<li><a href="../demo/app/message.html" target="_blank">仿微信</a></li>
+<li><a href="../demo/app/message.html" target="_blank">仿淘宝</a></li>
+<li><a href="../demo/app/message.html" target="_blank">确认订单</a></li>
+<li><a href="../demo/app/message.html" target="_blank">微门户</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                <ul class="nav bs-docs-sidenav">
+                    <li><a href="#grid">栅格系统</a></li>
+                    <li>
+                        <a href="#paiban">排版</a>
+                        <ul class="nav">
+                            <li><a href="#type-inline-text">内联文本元素</a></li>
+                            <li><a href="#type-alignment">对齐</a></li>
+                            <li><a href="#type-transformation">改变大小写</a></li>
+                            <li><a href="#type-abbreviations">缩略语</a></li>
+                            <li><a href="#type-lists">列表</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#images">图片</a>
+                        <ul class="nav">
+                            <li><a href="#images-responsive">响应式图片</a></li>
+                            <li><a href="#images-shapes">图片形状</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#helper-classes">辅助类</a>
+                        <ul class="nav">
+                            <li><a href="#helper-classes-colors">情境文本颜色</a></li>
+                            <li><a href="#helper-classes-backgrounds">情境背景色</a></li>
+                            <li><a href="#helper-classes-center">让内容块居中</a></li>
+                            <li><a href="#helper-classes-clearfix">清除浮动</a></li>
+                            <li><a href="#helper-classes-show-hide">显示或隐藏内容</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#buttons">按钮</a></li>
+                </ul>
+                <a class="back-to-top" href="#top">
+                    返回顶部
+                </a>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

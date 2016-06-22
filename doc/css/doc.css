@@ -101,11 +101,11 @@ code {
 }
 .bs-docs-nav .navbar-brand, .bs-docs-nav .navbar-nav>li>a {
     font-weight: 500;
-    color: #563d7c;
+    color: #005086;
 }
 .bs-docs-nav .navbar-nav>.active>a, .bs-docs-nav .navbar-nav>.active>a:hover, .bs-docs-nav .navbar-nav>li>a:hover {
-    color: #463265;
-    background-color: #f9f9f9;
+    color: #004472;
+    background-color: #F5F5F5;
 }
 
 
@@ -127,9 +127,9 @@ code {
 .bs-docs-sidebar .nav>.active:focus>a, .bs-docs-sidebar .nav>.active:hover>a, .bs-docs-sidebar .nav>.active>a {
     padding-left: 18px;
     font-weight: 700;
-    color: #563d7c;
+    color: #3E73C5;
     background-color: transparent;
-    border-left: 2px solid #563d7c;
+    border-left: 2px solid #3E73C5;
 }
 .bs-docs-sidebar .nav .nav {
     display: none;
