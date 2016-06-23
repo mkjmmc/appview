@@ -12,13 +12,9 @@
 <link rel="apple-touch-icon" href="favicon.png">
 <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="../dist/css/appview.css"/>
-
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/doc.css"/>
-
-    <link type="text/css" rel="stylesheet" href="css/github-light.css"/>
-    <script type="text/javascript" src="highlight/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <link type="text/css" rel="stylesheet" href="highlight/styles/github.css"/>
     <title>View - AppView - 简洁、直观、强悍、移动设备优先的前端开发框架</title>
     
 </head>
@@ -59,8 +55,7 @@
     <div class="row">
         <div class="col-md-9">
             <div class="bs-docs-section">
-                <h1 class="page-header">视图</h1>
-                <h2>基本视图</h2>
+                <h1 id="view-base">基本视图</h1>
                 <p>我们定义一种组成APP界面的最基本的元素：<code>View</code>，所有的APP界面都由各种<code>View</code>组成。<br/>所以我们在网页的最外层包裹一个<code>.view-list</code>作为最基础的视图</p>
                 <div class="highlight">
         <pre><code class="html">&lt;div class="view-list"&gt;
@@ -68,7 +63,7 @@
     &lt;div class="view"&gt;...&lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
-                <h2>线性布局</h2>
+                <h1 id="view-list">线性布局</h1>
                 <p>该布局由上到下按顺序堆叠</p>
                 <div class="highlight">
         <pre><code class="html">&lt;div class="view-list"&gt;
@@ -80,7 +75,7 @@
                 <div class="highlight">
                     <pre><code class="css">.view { display: block; }</code></pre>
                 </div>
-                <h2>列布局</h2>
+                <h1 id="view-list-item">列布局</h1>
                 <p>列布局可以将<code>View</code>进行竖向分隔，该布局使用了<code>flex布局</code></p>
                 <p>四个元素</p>
 
@@ -140,7 +135,7 @@
                         <div class="view-flex-item">10</div>
                     </div>
                 </div>
-                <h3>换行</h3>
+                <h1 id="view-wrap">换行</h1>
                 <p>如果需要设置列布局自动换行，只需要增加样式<code>view-flex-wrap</code></p>
                 <p>20个元素</p>
                 <div class="bs-example" data-example-id="simple-s">
@@ -174,7 +169,7 @@
     &lt;div class=&quot;view-flex-item&quot;&gt;3&lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
-                <h3>对齐方式</h3>
+                <h1 id="view-align">对齐方式</h1>
                 <p>提供种5对齐方式，<code>view-flex-start</code>，<code>view-flex-end</code>，<code>view-flex-center</code>，<code>view-flex-space-between</code>，<code>view-flex-space-around</code></p>
                 <h4>view-flex-start</h4>
                 <p>（默认值）：左对齐</p>
@@ -226,35 +221,11 @@
         <div class="col-md-3">
             <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
                 <ul class="nav bs-docs-sidenav">
-                    <li><a href="#grid">栅格系统</a></li>
-                    <li>
-                        <a href="#paiban">排版</a>
-                        <ul class="nav">
-                            <li><a href="#type-inline-text">内联文本元素</a></li>
-                            <li><a href="#type-alignment">对齐</a></li>
-                            <li><a href="#type-transformation">改变大小写</a></li>
-                            <li><a href="#type-abbreviations">缩略语</a></li>
-                            <li><a href="#type-lists">列表</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#images">图片</a>
-                        <ul class="nav">
-                            <li><a href="#images-responsive">响应式图片</a></li>
-                            <li><a href="#images-shapes">图片形状</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#helper-classes">辅助类</a>
-                        <ul class="nav">
-                            <li><a href="#helper-classes-colors">情境文本颜色</a></li>
-                            <li><a href="#helper-classes-backgrounds">情境背景色</a></li>
-                            <li><a href="#helper-classes-center">让内容块居中</a></li>
-                            <li><a href="#helper-classes-clearfix">清除浮动</a></li>
-                            <li><a href="#helper-classes-show-hide">显示或隐藏内容</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#buttons">按钮</a></li>
+                    <li><a href="#view-base">基本视图</a></li>
+                    <li><a href="#view-list">线性布局</a></li>
+                    <li><a href="#view-list-item">列布局</a></li>
+                    <li><a href="#view-wrap">换行</a></li>
+                    <li><a href="#view-align">对齐方式</a></li>
                 </ul>
                 <a class="back-to-top" href="#top">
                     返回顶部

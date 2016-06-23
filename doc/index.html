@@ -12,13 +12,9 @@
 <link rel="apple-touch-icon" href="favicon.png">
 <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="../dist/css/appview.css"/>
-
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/doc.css"/>
-
-    <link type="text/css" rel="stylesheet" href="css/github-light.css"/>
-    <script type="text/javascript" src="highlight/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <link type="text/css" rel="stylesheet" href="highlight/styles/github.css"/>
     <title>Base - AppView - 简洁、直观、强悍、移动设备优先的前端开发框架</title>
     
 </head>
@@ -61,6 +57,70 @@
             <div class="bs-docs-section">
                 <h1 id="paiban" class="page-header">排版</h1>
 
+                <h2 id="type-headings">标题</h2>
+                <p>HTML 中的所有标题标签，<code>&lt;h1&gt;</code> 到 <code>&lt;h6&gt;</code> 均可使用。另外，还提供了 <code>.h1</code> 到 <code>.h6</code> 类，为的是给内联（inline）属性的文本赋予标题的样式。</p>
+                <div class="bs-example bs-example-type" data-example-id="simple-headings">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td><h1>h1. AppView heading</h1></td>
+                        </tr>
+                        <tr>
+                            <td><h2>h2. AppView heading</h2></td>
+                        </tr>
+                        <tr>
+                            <td><h3>h3. AppView heading</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h4>h4. AppView heading</h4></td>
+                        </tr>
+                        <tr>
+                            <td><h5>h5. AppView heading</h5></td>
+                        </tr>
+                        <tr>
+                            <td><h6>h6. AppView heading</h6></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="highlight"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>h1. AppView heading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>h2. AppView heading<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>h3. AppView heading<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>h4. AppView heading<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>h5. AppView heading<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>h6. AppView heading<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span></code></pre></div>
+                <p>在标题内还可以包含 <code>&lt;small&gt;</code> 标签或赋予 <code>.small</code> 类的元素，可以用来标记副标题。</p>
+                <div class="bs-example bs-example-type" data-example-id="small-headings">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td><h1>h1. AppView heading <small>Secondary text</small></h1></td>
+                        </tr>
+                        <tr>
+                            <td><h2>h2. AppView heading <small>Secondary text</small></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h3>h3. AppView heading <small>Secondary text</small></h3></td>
+                        </tr>
+                        <tr>
+                            <td><h4>h4. AppView heading <small>Secondary text</small></h4></td>
+                        </tr>
+                        <tr>
+                            <td><h5>h5. AppView heading <small>Secondary text</small></h5></td>
+                        </tr>
+                        <tr>
+                            <td><h6>h6. AppView heading <small>Secondary text</small></h6></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="highlight"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>h1. AppView heading <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>h2. AppView heading <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>h3. AppView heading <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>h4. AppView heading <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>h5. AppView heading <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>h6. AppView heading <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>Secondary text<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span></code></pre></div>
+
                 <h2 id="type-inline-text">内联文本元素</h2>
 
                 <h3 id="-3">被删除的文本</h3>
@@ -71,7 +131,7 @@
                     </p>
                 </div>
                 <div class="highlight">
-                    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;del&gt;</span>This line of text is meant to be treated as deleted text.<span class="nt">&lt;/del&gt;</span></code></pre>
+                    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">del</span>&gt;</span>This line of text is meant to be treated as deleted text.<span class="hljs-tag">&lt;/<span class="hljs-name">del</span>&gt;</span></code></pre>
                 </div>
                 <h3 id="-4">无用文本</h3>
                 <p>对于没用的文本使用 <code>&lt;s&gt;</code> 标签。</p>
@@ -79,7 +139,7 @@
                     <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
                 </div>
                 <div class="highlight">
-                    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;s&gt;</span>This line of text is meant to be treated as no longer accurate.<span class="nt">&lt;/s&gt;</span></code></pre>
+                    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">s</span>&gt;</span>This line of text is meant to be treated as no longer accurate.<span class="hljs-tag">&lt;/<span class="hljs-name">s</span>&gt;</span></code></pre>
                 </div>
                 <h3 id="-5">插入文本</h3>
                 <p>额外插入的文本使用 <code>&lt;ins&gt;</code> 标签。</p>
@@ -89,7 +149,7 @@
                     </p>
                 </div>
                 <div class="highlight">
-                    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ins&gt;</span>This line of text is meant to be treated as an addition to the document.<span class="nt">&lt;/ins&gt;</span></code></pre>
+                    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ins</span>&gt;</span>This line of text is meant to be treated as an addition to the document.<span class="hljs-tag">&lt;/<span class="hljs-name">ins</span>&gt;</span></code></pre>
                 </div>
                 <h3 id="-6">带下划线的文本</h3>
                 <p>为文本添加下划线，使用 <code>&lt;u&gt;</code> 标签。</p>
@@ -97,7 +157,7 @@
                     <p><u>This line of text will render as underlined</u></p>
                 </div>
                 <div class="highlight">
-                    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;u&gt;</span>This line of text will render as underlined<span class="nt">&lt;/u&gt;</span></code></pre>
+                    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>This line of text will render as underlined<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span></code></pre>
                 </div>
                 <p>利用 HTML 自带的表示强调意味的标签来为文本增添少量样式。</p>
 
@@ -110,7 +170,7 @@
                     </p>
                 </div>
                 <div class="highlight">
-                    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;small&gt;</span>This line of text is meant to be treated as fine print.<span class="nt">&lt;/small&gt;</span></code></pre>
+                    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>This line of text is meant to be treated as fine print.<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span></code></pre>
                 </div>
                 <h3 id="-8">着重</h3>
                 <p>通过增加 font-weight 值强调一段文本。</p>
@@ -118,7 +178,7 @@
                     <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
                 </div>
                 <div class="highlight">
-                    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;strong&gt;</span>rendered as bold text<span class="nt">&lt;/strong&gt;</span></code></pre>
+                    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>rendered as bold text<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span></code></pre>
                 </div>
                 <h3 id="-9">斜体</h3>
                 <p>用斜体强调一段文本。</p>
@@ -126,7 +186,7 @@
                     <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
                 </div>
                 <div class="highlight">
-                    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;em&gt;</span>rendered as italicized text<span class="nt">&lt;/em&gt;</span></code></pre>
+                    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>rendered as italicized text<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span></code></pre>
                 </div>
                 <div class="bs-callout bs-callout-info" id="callout-type-b-i-elems">
                     <h4>Alternate elements</h4>
@@ -142,11 +202,11 @@
                     <p class="text-nowrap">No wrap text.</p>
                 </div>
                 <div class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Left aligned text.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Center aligned text.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Right aligned text.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>Justified text.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-nowrap"</span><span class="nt">&gt;</span>No wrap text.<span class="nt">&lt;/p&gt;</span></code></pre>
+    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-left"</span>&gt;</span>Left aligned text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center"</span>&gt;</span>Center aligned text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-right"</span>&gt;</span>Right aligned text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-justify"</span>&gt;</span>Justified text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-nowrap"</span>&gt;</span>No wrap text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
                 </div>
                 <h2 id="type-transformation">改变大小写</h2>
                 <p>通过这几个类可以改变文本的大小写。</p>
@@ -156,19 +216,19 @@
                     <p class="text-capitalize">Capitalized text.</p>
                 </div>
                 <div class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lowercase"</span><span class="nt">&gt;</span>Lowercased text.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-uppercase"</span><span class="nt">&gt;</span>Uppercased text.<span class="nt">&lt;/p&gt;</span>
-        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-capitalize"</span><span class="nt">&gt;</span>Capitalized text.<span class="nt">&lt;/p&gt;</span></code></pre>
+    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-lowercase"</span>&gt;</span>Lowercased text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-uppercase"</span>&gt;</span>Uppercased text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-capitalize"</span>&gt;</span>Capitalized text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
                 </div>
                 <h2 id="type-abbreviations">缩略语</h2>
-                <p>当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 <code>&lt;abbr&gt;</code> 元素的增强样式。缩略语元素带有 <code>title</code> 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有"问号"的指针。如想看完整的内容可把鼠标悬停在缩略语上（对使用辅助技术的用户也可见）, 但需要包含 title 属性。</p>
+                <p>当鼠标悬停在缩写和缩写词上时就会显示完整内容，AppView 实现了对 HTML 的 <code>&lt;abbr&gt;</code> 元素的增强样式。缩略语元素带有 <code>title</code> 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有"问号"的指针。如想看完整的内容可把鼠标悬停在缩略语上（对使用辅助技术的用户也可见）, 但需要包含 title 属性。</p>
 
                 <h3 id="-10">基本缩略语</h3>
                 <div class="bs-example" data-example-id="simple-abbr">
                     <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
                 </div>
                 <div class="highlight">
-                    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"attribute"</span><span class="nt">&gt;</span>attr<span class="nt">&lt;/abbr&gt;</span></code></pre>
+                    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"attribute"</span>&gt;</span>attr<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span></code></pre>
                 </div>
                 <h2 id="type-lists">列表</h2>
 
@@ -194,9 +254,9 @@
                     </ul>
                 </div>
                 <div class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul&gt;</span>
-        <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span></code></pre>
+    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
                 </div>
                 <h3 id="-17">有序列表</h3>
                 <p>顺序<em>至关重要</em>的一组元素。</p>
@@ -213,9 +273,9 @@
                     </ol>
                 </div>
                 <div class="highlight">
-    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol&gt;</span>
-        <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ol&gt;</span></code></pre>
+    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>
                 </div>
             </div>
 
@@ -226,7 +286,7 @@
                 <p>通过为图片添加 <code>.img-responsive</code> 类可以让图片支持响应式布局。其实质是为图片设置了 <code>max-width: 100%;</code>、 <code>height: auto;</code> 和 <code>display: block;</code> 属性，从而让图片在其父元素中更好的缩放。</p>
                 <p>如果需要让使用了 <code>.img-responsive</code> 类的图片水平居中，请使用 <code>.center-block</code> 类，不要用 <code>.text-center</code>。 <a href="#helper-classes-center">请参考助手类章节</a> 了解更多关于 <code>.center-block</code> 的用法。</p>
 
-                <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-responsive"</span> <span class="na">alt=</span><span class="s">"Responsive image"</span><span class="nt">&gt;</span></code></pre></div>
+                <div class="highlight"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-responsive"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Responsive image"</span>&gt;</span></code></pre></div>
 
                 <h2 id="images-shapes">图片形状</h2>
                 <p>通过为 <code>&lt;img&gt;</code> 元素添加以下相应的类，可以让图片呈现不同的形状。</p>
@@ -239,9 +299,9 @@
                     <img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTU2ZDIyYjZhOCB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1NTZkMjJiNmE4Ij48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 140px; height: 140px;">
                     <img data-src="holder.js/140x140" class="img-thumbnail" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTU2ZDIyNjkwYSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1NTZkMjI2OTBhIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true" style="width: 140px; height: 140px;">
                 </div>
-                <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-rounded"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-circle"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-thumbnail"</span><span class="nt">&gt;</span></code></pre></div>
+                <div class="highlight"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-rounded"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-circle"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img-thumbnail"</span>&gt;</span></code></pre></div>
             </div>
             <div class="bs-docs-section">
                 <h1 id="helper-classes" class="page-header">辅助类</h1>
@@ -259,15 +319,14 @@
                     <p><a class="text-black" href="javascript:;">Donec ullamcorper nulla non metus auctor fringilla.</a></p>
                 </div>
                 <div class="highlight">
-    <pre><code class="html">&lt;p class="text-muted"&gt;...&lt;/p&gt;
-        &lt;p class="text-primary"&gt;...&lt;/p&gt;
-        &lt;p class="text-success"&gt;...&lt;/p&gt;
-        &lt;p class="text-info"&gt;...&lt;/p&gt;
-        &lt;p class="text-warning"&gt;...&lt;/p&gt;
-        &lt;p class="text-danger"&gt;...&lt;/p&gt;
-        &lt;p class="text-white"&gt;...&lt;/p&gt;
-        &lt;p class="text-black"&gt;...&lt;/p&gt;
-    </code></pre>
+    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-muted"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-primary"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-success"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-info"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-warning"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-danger"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-black"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
                 </div>
                 <h3 id="helper-classes-backgrounds">情境背景色</h3>
                 <p>和情境文本颜色类一样，使用任意情境背景色类就可以设置元素的背景。链接组件在鼠标经过时颜色会加深，就像上面所讲的情境文本颜色类一样。</p>
@@ -282,95 +341,96 @@
                     <p><a class="bg-black text-white" href="javascript:;">------为了突出显示，增加了text-white------</a></p>
                 </div>
                 <div class="highlight">
-    <pre><code class="html">&lt;p class="bg-primary"&gt;...&lt;/p&gt;
-        &lt;p class="bg-success"&gt;...&lt;/p&gt;
-        &lt;p class="bg-info"&gt;...&lt;/p&gt;
-        &lt;p class="bg-warning"&gt;...&lt;/p&gt;
-        &lt;p class="bg-danger"&gt;...&lt;/p&gt;
-        &lt;p class="bg-whitesmoke"&gt;...&lt;/p&gt;
-        &lt;p class="bg-white"&gt;...&lt;/p&gt;
-        &lt;p class="bg-black"&gt;...&lt;/p&gt;
-    </code></pre>
+    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-primary"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-success"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-info"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-warning"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-danger"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-whitesmoke"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-white"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-black"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
                 </div>
                 <h3 id="helper-classes-floats"><a class="anchorjs-link " href="#helper-classes-floats" aria-label="Anchor link for: helper classes floats" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>快速浮动</h3>
                 <p>通过添加一个类，可以将任意元素向左或向右浮动。<code>!important</code> 被用来明确 CSS 样式的优先级。这些类还可以作为 mixin（参见 less 文档） 使用。</p>
-                <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-left"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pull-right"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre></div>
-                <div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Classes
-</span><span class="nc">.pull-left</span> <span class="p">{</span>
-                    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
-                    <span class="p">}</span>
-                    <span class="nc">.pull-right</span> <span class="p">{</span>
-                    <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span> <span class="o">!</span><span class="n">important</span><span class="p">;</span>
-                    <span class="p">}</span>
-</code></pre></div>
+                <div class="highlight"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pull-left"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pull-right"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
+                <div class="highlight"><pre><code class="css hljs">// <span class="hljs-selector-tag">Classes</span>
+<span class="hljs-selector-class">.pull-left</span> {
+    <span class="hljs-attribute">float</span>: left <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.pull-right</span> {
+    <span class="hljs-attribute">float</span>: right <span class="hljs-meta">!important</span>;
+}</code></pre></div>
 
                 <h3 id="helper-classes-center">让内容块居中</h3>
                 <p>为任意元素设置 <code>display: block</code> 属性并通过 <code>margin</code> 属性让其中的内容居中。下面列出的类还可以作为 mixin 使用。</p>
                 <div class="highlight">
-                    <pre><code class="html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"center-block"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre>
+                    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"center-block"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
                 </div>
                 <div class="highlight">
-    <pre><code class="scss" data-lang="scss"><span class="c1">// Class </span><span class="nc">.center-block</span> <span class="p">{</span>
-        <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
-        <span class="nl">margin-left</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
-        <span class="nl">margin-right</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
-        <span class="p">}</span>
+    <pre><code class="css hljs">// <span class="hljs-selector-tag">Class</span>
+<span class="hljs-selector-class">.center-block</span> {
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">margin-left</span>: auto;
+    <span class="hljs-attribute">margin-right</span>: auto;
+}
 
-<span class="c1">// Usage as a mixin
-</span><span class="nc">.element</span> <span class="p">{</span>
-        <span class="nc">.center-block</span><span class="o">()</span><span class="p">;</span>
-        <span class="p">}</span></code></pre>
+// <span class="hljs-selector-tag">Usage</span> <span class="hljs-selector-tag">as</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">mixin</span>
+<span class="hljs-selector-class">.element</span> {
+    .center-block();
+}</code></pre>
                 </div>
                 <h3 id="helper-classes-clearfix">清除浮动</h3>
                 <p><strong>通过为父元素</strong>添加 <code>.clearfix</code> 类可以很容易地清除浮动（<code>float</code>）。这里所使用的是 Nicolas Gallagher 创造的 <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro clearfix</a> 方式。此类还可以作为 mixin 使用。</p>
                 <div class="highlight">
-    <pre><code class="html" data-lang="html"><span class="c">&lt;!-- Usage as a class --&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre>
+    <pre><code class="html hljs xml"><span class="hljs-comment">&lt;!-- Usage as a class --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"clearfix"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
                 </div>
                 <div class="highlight">
-    <pre><code class="scss" data-lang="scss"><span class="c1">// Mixin itself </span><span class="nc">.clearfix</span><span class="o">()</span> <span class="p">{</span>
-        <span class="k">&amp;</span><span class="nd">:before</span><span class="o">,</span>
-        <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
-        <span class="nl">content</span><span class="p">:</span> <span class="s2">" "</span><span class="p">;</span>
-        <span class="nl">display</span><span class="p">:</span> <span class="n">table</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="k">&amp;</span><span class="nd">:after</span> <span class="p">{</span>
-        <span class="nl">clear</span><span class="p">:</span> <span class="nb">both</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="p">}</span>
+    <pre><code class="scss hljs java"><span class="hljs-comment">// Mixin itself </span>
+.clearfix() {
+    &amp;:before,
+    &amp;:after {
+        content: <span class="hljs-string">" "</span>;
+        display: table;
+    }
+    &amp;:after {
+        clear: both;
+    }
+}
 
-<span class="c1">// Usage as a mixin
-</span><span class="nc">.element</span> <span class="p">{</span>
-        <span class="nc">.clearfix</span><span class="o">()</span><span class="p">;</span>
-        <span class="p">}</span></code></pre>
+<span class="hljs-comment">// Usage as a mixin</span>
+.element {
+    .clearfix();
+}</code></pre>
                 </div>
                 <h3 id="helper-classes-show-hide">显示或隐藏内容</h3>
                 <p><code>.show</code> 和 <code>.hidden</code> 类可以强制任意元素显示或隐藏(<strong>对于屏幕阅读器也能起效</strong>)。这些类通过 <code>!important</code> 来避免 CSS 样式优先级问题，就像 <a href="#helper-classes-floats">quick floats</a> 一样的做法。注意，这些类只对块级元素起作用，另外，还可以作为 mixin 使用。</p>
                 <p><code>.hide</code> 类仍然可用，但是它不能对屏幕阅读器起作用，并且从 v3.0.1 版本开始就<strong>不建议使用</strong>了。请使用 <code>.hidden</code> 或 <code>.sr-only</code> 。</p>
                 <p>另外，<code>.invisible</code> 类可以被用来仅仅影响元素的可见性，也就是所，元素的 <code>display</code> 属性不被改变，并且这个元素仍然能够影响文档流的排布。</p>
                 <div class="highlight">
-    <pre><code class="html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"show"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hidden"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span></code></pre>
+    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hidden"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
                 </div>
                 <div class="highlight">
-    <pre><code class="scss" data-lang="scss">// Classes .show {
-        display: block !important;
-        }
-        .hidden {
-        display: none !important;
-        }
-        .invisible {
-        visibility: hidden;
-        }
+    <pre><code class="css hljs">// <span class="hljs-selector-tag">Classes</span>
+<span class="hljs-selector-class">.show</span> {
+    <span class="hljs-attribute">display</span>: block <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.hidden</span> {
+    <span class="hljs-attribute">display</span>: none <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.invisible</span> {
+    <span class="hljs-attribute">visibility</span>: hidden;
+}
 
-        // Usage as mixins
-        .element {
-        .show();
-        }
-        .another-element {
-        .hidden();
-        }</code></pre>
+// <span class="hljs-selector-tag">Usage</span> <span class="hljs-selector-tag">as</span> <span class="hljs-selector-tag">mixins</span>
+<span class="hljs-selector-class">.element</span> {
+    .show();
+}
+<span class="hljs-selector-class">.another-element</span> {
+    .hidden();
+}</code></pre>
                 </div>
             </div>
         </div>
@@ -381,6 +441,7 @@
                     <li>
                         <a href="#paiban">排版</a>
                         <ul class="nav">
+                            <li><a href="#type-headings">标题</a></li>
                             <li><a href="#type-inline-text">内联文本元素</a></li>
                             <li><a href="#type-alignment">对齐</a></li>
                             <li><a href="#type-transformation">改变大小写</a></li>

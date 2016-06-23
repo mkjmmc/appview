@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hightlightjs 在线代码高亮转换</title>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="highlight/styles/github.css"/>
+    <script type="text/javascript" src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+        $(function () {
+           $('#translate').click(function () {
+               var type = $('input[name="trantype"]:checked').val();
+               if(type == 'other') type = $('#othertype').val();
+               $('#for-translate code').text($('#code').val()).removeClass().addClass(type);
+               $('#for-translate code').each(function(i, block) {
+                   hljs.highlightBlock(block);
+               });
+               $('#htmlcode').val($('#for-translate').html());
+           }) 
+        });
+    </script>
+</head>
+<body>
+<div>
+<textarea id="code" style="height: 300px; width: 100%;"></textarea>
+</div>
+<div>
+    <label><input type="radio" name="trantype" value="html" /> html</label>
+    <label><input type="radio" name="trantype" value="css" /> css</label>
+    <label><input type="radio" name="trantype" value="javascript" /> javascript</label>
+    <label><input type="radio" name="trantype" value="other" /> 其他 <input type="text" id="othertype" /></label>
+    <a id="translate">转换</a>
+</div>
+<div>
+<textarea id="htmlcode" style="height:300px; width: 100%;"></textarea>
+</div>
+<h3>显示效果</h3>
+<pre id="for-translate"><code></code></pre>
+</body>
+</html>

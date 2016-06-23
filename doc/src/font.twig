@@ -3,87 +3,77 @@
 {% block title %}Font{% endblock %}
 {% block content %}
 <header class="" id="content" role="main" tabindex="-1">
-  <div class="container p-l">
-    <h1 class="">字体</h1>
-    <p class="text-xl">设置默认的字体大小，并根据不同的dpr固定字号，保证字体显示效果最优。</p>
-  </div>
+    <div class="container p-l">
+        <h1 class="">字体</h1>
+        <p class="text-xl">设置默认的字体大小，并根据不同的dpr固定字号，保证字体显示效果最优。</p>
+    </div>
 </header>
 <div class="container text-m  p-l">
-  <div class="row">
-    <div class="col-md-9">
-<div class="bs-docs-section">
-  <h1 id="type" class="page-header"><a class="anchorjs-link " href="#type" aria-label="Anchor link for: type" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>字体</h1>
-  <h2 id="type-alignment"><a class="anchorjs-link " href="#type-alignment" aria-label="Anchor link for: type alignment" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>字体大小</h2>
-  <p>通过设置样式，可以简单方便的设置文字大小，并兼容移动端显示。</p>
-  <p>文本字号不建议使用 <code>rem</code></p>
-  <p>在iPhone3G和iPhone4的Retina屏下面，我们希望看到的文本字号是相同的。也就是说，我们不希望文本在Retina屏幕下变小，另外，我们希望在大屏手机上看到更多文本，以及，现在绝大多数的字体文件都自带一些点阵尺寸，通常是<code>16px</code>和<code>24px</code>，所以我们不希望出现<code>13px</code>和<code>15px</code>这样的奇葩尺寸。
-    如此一来，就决定了在制作H5的页面中，<code>rem</code>并不适合用到段落文本上。所以在Flexible整个适配方案中，考虑文本还是使用<code>px</code>作为单位。只不过使用<code>[data-dpr]</code>属性来区分不同<code>dpr</code>下的文本字号大小。</p>
-  <div class="bs-example" data-example-id="text-alignment">
-    <p class="text-xs">10px字体，在有些浏览器有最小字体限制，可能无法正常显示.</p>
-    <p class="text-s">12px字体，适用于描述性文字.</p>
-    <p class="text-m">14px字体，默认字体大小.</p>
-    <p class="text-l">16px字体，稍大.</p>
-    <p class="text-xl">18px字体，适用于标题.</p>
-    <p class="text-xxl">24px字体，适用于标题.</p>
-  </div>
-  <div class="highlight">
-    <pre><code class="html">&lt;p class="text-xs"&gt;10px字体，在有些浏览器有最小字体限制，可能无法正常显示.&lt;/p&gt;
-&lt;p class="text-s"&gt;12px字体，适用于描述性文字.&lt;/p&gt;
-&lt;p class="text-m"&gt;14px字体，默认字体大小.&lt;/p&gt;
-&lt;p class="text-l"&gt;16px字体，稍大.&lt;/p&gt;
-&lt;p class="text-xl"&gt;18px字体，适用于标题.&lt;/p&gt;
-&lt;p class="text-xxl"&gt;24px字体，适用于标题.&lt;/p&gt;</code></pre>
-  </div>
+    <div class="row">
+        <div class="col-md-9">
+            <div class="bs-docs-section">
+                <h1 id="type-fontsize" class="page-header">字体大小</h1>
+                <p>通过设置样式，可以简单方便的设置文字大小，并兼容移动端显示。</p>
+                <p>文本字号不建议使用 <code>rem</code></p>
+                <p>在iPhone3G和iPhone4的Retina屏下面，我们希望看到的文本字号是相同的。也就是说，我们不希望文本在Retina屏幕下变小，另外，我们希望在大屏手机上看到更多文本，以及，现在绝大多数的字体文件都自带一些点阵尺寸，通常是<code>16px</code>和<code>24px</code>，所以我们不希望出现<code>13px</code>和<code>15px</code>这样的奇葩尺寸。
+                    如此一来，就决定了在制作H5的页面中，<code>rem</code>并不适合用到段落文本上。所以在Flexible整个适配方案中，考虑文本还是使用<code>px</code>作为单位。只不过使用<code>[data-dpr]</code>属性来区分不同<code>dpr</code>下的文本字号大小。</p>
+                <div class="bs-example" data-example-id="text-alignment">
+                    <p class="text-xxs">10px字体，在有些浏览器有最小字体限制，可能无法正常显示.</p>
+                    <p class="text-xs">12px字体，适用于描述性文字.</p>
+                    <p class="text-s">14px字体，稍小.</p>
+                    <p class="text-m">16px字体，默认字体大小.</p>
+                    <p class="text-l">18px字体，稍大.</p>
+                    <p class="text-xl">20px字体，适用于标题.</p>
+                    <p class="text-xxl">24px字体，适用于标题.</p>
+                </div>
+                <div class="highlight">
+    <pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-xxs"</span>&gt;</span>10px字体，在有些浏览器有最小字体限制，可能无法正常显示.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-xs"</span>&gt;</span>12px字体，适用于描述性文字.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-s"</span>&gt;</span>14px字体，稍小.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-m"</span>&gt;</span>16px字体，默认字体大小.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-l"</span>&gt;</span>18px字体，稍大.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-xl"</span>&gt;</span>20px字体，适用于标题.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-xxl"</span>&gt;</span>24px字体，适用于标题.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+                </div>
 
-  <p>我们定义了基本的字体大小<code>10px</code>,<code>12px</code>,<code>14px</code>,<code>16px</code>,<code>18px</code>,<code>24px</code>用于适配常见的网页字体，如果需要特殊的字号，可以自行添加样式如下</p>
+                <p>我们定义了基本的字体大小<code>10px</code>,<code>12px</code>,<code>14px</code>,<code>16px</code>,<code>18px</code>,<code>24px</code>用于适配常见的网页字体，如果需要特殊的字号，可以自行添加样式如下</p>
 
-  <div class="highlight">
-    <pre><code class="css">.text-xxl {font-size:24px}
-[data-dpr="2"] .text-xxl {font-size:48px}
-[data-dpr="3"] .text-xxl {font-size:72px}</code></pre>
-  </div>
-</div>
+                <div class="highlight">
+    <pre><code class="css hljs"><span class="hljs-selector-class">.text-xxl</span> {<span class="hljs-attribute">font-size</span>:<span class="hljs-number">24px</span>}
+<span class="hljs-selector-attr">[data-dpr="2"]</span> <span class="hljs-selector-class">.text-xxl</span> {<span class="hljs-attribute">font-size</span>:<span class="hljs-number">48px</span>}
+<span class="hljs-selector-attr">[data-dpr="3"]</span> <span class="hljs-selector-class">.text-xxl</span> {<span class="hljs-attribute">font-size</span>:<span class="hljs-number">72px</span>}</code></pre>
+                </div>
+            </div>
+            <div class="bs-docs-section">
+                <h1 id="type-heading" class="page-header">标题</h1>
+                <p>AppView 设置了通用的标题样式。并针对不同的<code>dpr</code>进行了特殊设置，保证在移动端的显示效果保持一致</p>
+                <div class="bs-example" data-example-id="text-alignment">
+                    <h1>h1. AppView heading</h1>
+                    <h2>h2. AppView heading</h2>
+                    <h3>h3. AppView heading</h3>
+                    <h4>h4. AppView heading</h4>
+                    <h5>h5. AppView heading</h5>
+                    <h6>h6. AppView heading</h6>
+                </div>
+                <div class="highlight">
+    <pre><code class="css hljs"><span class="hljs-selector-tag">h1</span>,<span class="hljs-selector-class">.h1</span>{  <span class="hljs-attribute">font-size </span>:<span class="hljs-number">36px</span>;}
+<span class="hljs-selector-attr">[data-dpr="2"]</span> <span class="hljs-selector-tag">h1</span>,<span class="hljs-selector-class">.h1</span>{  <span class="hljs-attribute">font-size </span>:<span class="hljs-number">72px</span>;}
+<span class="hljs-selector-attr">[data-dpr="3"]</span> <span class="hljs-selector-tag">h1</span>,<span class="hljs-selector-class">.h1</span>{  <span class="hljs-attribute">font-size </span>:<span class="hljs-number">108px</span>;}</code></pre></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                <ul class="nav bs-docs-sidenav">
+                    <li><a href="#type-fontsize">字体大小</a></li>
+                    <li><a href="#type-heading">标题</a></li>
+                </ul>
+                <a class="back-to-top" href="#top">
+                    返回顶部
+                </a>
+
+            </nav>
+        </div>
     </div>
-    <div class="col-md-3">
-      <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
-        <ul class="nav bs-docs-sidenav">
-          <li><a href="#grid">栅格系统</a></li>
-          <li>
-            <a href="#paiban">排版</a>
-            <ul class="nav">
-              <li><a href="#type-inline-text">内联文本元素</a></li>
-              <li><a href="#type-alignment">对齐</a></li>
-              <li><a href="#type-transformation">改变大小写</a></li>
-              <li><a href="#type-abbreviations">缩略语</a></li>
-              <li><a href="#type-lists">列表</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#images">图片</a>
-            <ul class="nav">
-              <li><a href="#images-responsive">响应式图片</a></li>
-              <li><a href="#images-shapes">图片形状</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#helper-classes">辅助类</a>
-            <ul class="nav">
-              <li><a href="#helper-classes-colors">情境文本颜色</a></li>
-              <li><a href="#helper-classes-backgrounds">情境背景色</a></li>
-              <li><a href="#helper-classes-center">让内容块居中</a></li>
-              <li><a href="#helper-classes-clearfix">清除浮动</a></li>
-              <li><a href="#helper-classes-show-hide">显示或隐藏内容</a></li>
-            </ul>
-          </li>
-          <li><a href="#buttons">按钮</a></li>
-        </ul>
-        <a class="back-to-top" href="#top">
-          返回顶部
-        </a>
-
-      </nav>
-    </div>
-  </div>
 </div>
 
 
