@@ -8,14 +8,12 @@
     <script src="../../build/flexible.js"></script>
     <link rel="apple-touch-icon" href="favicon.png">
     <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="../../build/base.css"/>
-    <link type="text/css" rel="stylesheet" href="../../build/font.css"/>
-    <link type="text/css" rel="stylesheet" href="../../build/view.css"/>
+    <link type="text/css" rel="stylesheet" href="../../dist/css/appview.css"/>
     <link type="text/css" rel="stylesheet" href="http://frame.yingyutalk.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
     <link type="text/css" rel="stylesheet" href="wx.css"/>
-    <style>
 
-    </style>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../src/js/appview.js"></script>
     <script src="../../build/iscroll-lite.js"></script>
     <script>
         var myScroll;
@@ -34,60 +32,48 @@
 <body class="" onload="loaded()">
 <div class="scrollview">
     <div class="view view-titlebar">
-        <div class="view-titlebar-text text-xl text-cut">发现</div>
+        <div class="view-titlebar-text text-l text-cut">发现</div>
     </div>
     <div class="scroll-wrap bg-whitesmoke">
         <div class="scroll-content">
             <div class="view-list">
                 <div class="view-table m-t-l">
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
-                        <div>
+                        <i class=""><img src="images/faxian-pyq.png" class="icon-m"></i>
                             <span>朋友圈</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
-                        <div>
+                        <i class=""><img src="images/faxian-sao.png" class="icon-m"></i>
                             <span>扫一扫</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
-                        <div>
+                        <i class=""><img src="images/faxian-yao.png" class="icon-m"></i>
                             <span>摇一摇</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
 
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
-                        <div>
+                        <i class=""><img src="images/faxian-fujin.png" class="icon-m"></i>
                             <span>附近的人</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
-                        <div>
+                        <i class=""><img src="images/faxian-gouwu.png" class="icon-m"></i>
                             <span>购物</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                     <a class="view-table-cell">
-                        <i class="fa fa-search"></i>
-                        <div>
+                        <i class=""><img src="images/faxian-game.png" class="icon-m"></i>
                             <span>游戏</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
             </div>
@@ -95,23 +81,19 @@
     </div>
     <div class="view view-tabbar">
         <a href="message.html">
-            <i class="fa fa-comment"></i>
-
+            <i class=""><img src="images/tab-message.png" class="icon-m"></i>
             <p>消息</p>
         </a>
         <a href="contacts.html">
-            <i class="fa fa-list-ul"></i>
-
+            <i class=""><img src="images/tab-linkman.png" class="icon-m"></i>
             <p>通讯录</p>
         </a>
         <a href="discovery.html">
-            <i class="fa fa-search"></i>
-
-            <p>发现</p>
+            <i class=""><img src="images/tab-faxian-a.png" class="icon-m"></i>
+            <p class="text-success">发现</p>
         </a>
         <a href="me.html">
-            <i class="fa fa-user"></i>
-
+            <i class=""><img src="images/tab-me.png" class="icon-m"></i>
             <p>我</p>
         </a>
     </div>

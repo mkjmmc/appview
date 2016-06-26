@@ -8,9 +8,7 @@
     <script src="../../build/flexible.js"></script>
     <link rel="apple-touch-icon" href="favicon.png">
     <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="../../build/base.css"/>
-    <link type="text/css" rel="stylesheet" href="../../build/font.css"/>
-    <link type="text/css" rel="stylesheet" href="../../build/view.css"/>
+    <link type="text/css" rel="stylesheet" href="../../dist/css/appview.css"/>
     <link type="text/css" rel="stylesheet" href="http://frame.yingyutalk.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
     <link type="text/css" rel="stylesheet" href="wx.css"/>
     <style>
@@ -31,37 +29,85 @@
 <body class="" onload="loaded()">
 <div class="scrollview">
     <div class="view view-titlebar">
+        <a></a>
         <div class="view-titlebar-text text-l text-cut">通讯录</div>
-        <a class="view-titlebar-righticon"><i class="fa fa-search"></i></a>
+        <a class=""><i class="fa fa-search"></i></a>
     </div>
-    <div class="scroll-wrap">
+    <div class="scroll-wrap bg-whitesmoke">
         <div class="scroll-content">
             <div class="view-list">
-                <div class="banner">
-                    asfafa
+                <div class="view-table contacts-list">
+                    <a class="view-table-cell">
+                        <i class=""><img src="images/faxian-new.png" class="icon-l"></i>
+                            <span>新的朋友</span>
+                    </a>
+                    <a class="view-table-cell">
+                        <i class=""><img src="images/faxian-qun.png" class="icon-l"></i>
+                        <span>群聊</span>
+                    </a>
+                    <a class="view-table-cell">
+                        <i class=""><img src="images/faxian-tag.png" class="icon-l"></i>
+                        <span>标签</span>
+                    </a>
+                    <a class="view-table-cell">
+                        <i class=""><img src="images/faxian-gzh.png" class="icon-l"></i>
+                        <span>公众号</span>
+                    </a>
+                </div>
+                <div class="p-xs p-l-l">星标朋友</div>
+                <div class="view-table contacts-list">
+
+                    <a class="view-table-cell">
+                        <i class=""><img src="../images/photo.jpg" class="icon-l"></i>
+                        <span>啦啦啦</span>
+                    </a>
+                    <a class="view-table-cell">
+                        <i class=""><img src="../images/photo.jpg" class="icon-l"></i>
+                        <span>啦啦啦</span>
+                    </a>
+                    <a class="view-table-cell">
+                        <i class=""><img src="../images/photo.jpg" class="icon-l"></i>
+                        <span>啦啦啦</span>
+                    </a>
+                    <a class="view-table-cell">
+                        <i class=""><img src="../images/photo.jpg" class="icon-l"></i>
+                        <span>啦啦啦</span>
+                    </a>
+                    <a class="view-table-cell">
+                        <i class=""><img src="../images/photo.jpg" class="icon-l"></i>
+                        <span>啦啦啦</span>
+                    </a>
+                    <a class="view-table-cell">
+                        <i class=""><img src="../images/photo.jpg" class="icon-l"></i>
+                        <span>啦啦啦</span>
+                    </a>
+                    <a class="view-table-cell">
+                        <i class=""><img src="../images/photo.jpg" class="icon-l"></i>
+                        <span>啦啦啦</span>
+                    </a>
+                    <a class="view-table-cell">
+                        <i class=""><img src="../images/photo.jpg" class="icon-l"></i>
+                        <span>啦啦啦</span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <div class="view view-tabbar">
         <a href="message.html">
-            <i class="fa fa-comment"></i>
-
+            <i class=""><img src="images/tab-message.png" class="icon-m"></i>
             <p>消息</p>
         </a>
         <a href="contacts.html">
-            <i class="fa fa-list-ul"></i>
-
-            <p>通讯录</p>
+            <i class=""><img src="images/tab-linkman-a.png" class="icon-m"></i>
+            <p class="text-success">通讯录</p>
         </a>
         <a href="discovery.html">
-            <i class="fa fa-search"></i>
-
+            <i class=""><img src="images/tab-faxian.png" class="icon-m"></i>
             <p>发现</p>
         </a>
         <a href="me.html">
-            <i class="fa fa-user"></i>
-
+            <i class=""><img src="images/tab-me.png" class="icon-m"></i>
             <p>我</p>
         </a>
     </div>

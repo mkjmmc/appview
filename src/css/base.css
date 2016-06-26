@@ -406,22 +406,6 @@ input[type="reset"] {
 .b-b-gainsboro {
   border-bottom: solid 1px #DCDCDC;
 }
-.icon-xs {
-  width: .4rem;
-}
-.icon-s {
-  width: .75rem;
-}
-.icon-m {
-  width: 1.125rem;
-}
-.icon-l {
-  width: 1.2rem;
-}
-/*45px*/
-.icon-xl {
-  width: 1.875rem;
-}
 /* padding 规范 */
 .p-xxs {
   padding: 0.08rem;
@@ -836,4 +820,47 @@ p {
 }
 .col-12 {
   width: 100%;
+}
+/* ICON规范*/
+.icon-xs {
+  width: .4rem;
+}
+.icon-s {
+  width: 20px;
+}
+[data-dpr="2"] .icon-s {
+  width: 40px;
+}
+[data-dpr="3"] .icon-s {
+  width: 60px;
+}
+.icon-m {
+  width: 30px;
+}
+[data-dpr="2"] .icon-m {
+  width: 60px;
+}
+[data-dpr="3"] .icon-m {
+  width: 90px;
+}
+.icon-l {
+  width: 36px;
+}
+[data-dpr="2"] .icon-l {
+  width: 72px;
+}
+[data-dpr="3"] .icon-l {
+  width: 108px;
+}
+.icon-xl {
+  width: 45px;
+}
+[data-dpr="2"] .icon-xl {
+  width: 90px;
+}
+[data-dpr="3"] .icon-xl {
+  width: 135px;
+}
+.icon-xxl {
+  width: 1.875rem;
 }

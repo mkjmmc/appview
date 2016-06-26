@@ -8,14 +8,11 @@
     <script src="../../build/flexible.js"></script>
     <link rel="apple-touch-icon" href="favicon.png">
     <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="../../build/base.css"/>
-    <link type="text/css" rel="stylesheet" href="../../build/font.css"/>
-    <link type="text/css" rel="stylesheet" href="../../build/view.css"/>
+    <link type="text/css" rel="stylesheet" href="../../dist/css/appview.css"/>
     <link type="text/css" rel="stylesheet" href="http://frame.yingyutalk.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
     <link type="text/css" rel="stylesheet" href="wx.css"/>
-    <style>
-
-    </style>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../src/js/appview.js"></script>
     <script src="../../build/iscroll.js"></script>
     <script>
         var myScroll;
@@ -37,7 +34,9 @@
 <body class="" onload="loaded()">
 <div class="scrollview">
     <div class="view view-titlebar">
-        <div class="view-titlebar-text text-xl text-cut">我</div>
+        <i ></i>
+        <div class="view-titlebar-text text-l text-cut">我</div>
+        <i class=""></i>
     </div>
     <div class="scroll-wrap bg-whitesmoke">
         <div class="scroll-content">
@@ -45,64 +44,50 @@
                 <div class="view-table m-t-l">
                     <a class="view-table-cell">
                         <i class=""><img src="../images/photo.jpg" class="icon-xl img-rounded"></i>
-                        <div>
                             <span>
                                 啦啦啦
                                 <div class="text-m m-t-xs">微信号：hilxitmixt</div>
                             </span>
                             <i class="fa fa-qrcode text-xxl text-muted"></i>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell">
-                        <div>
-                            <i class="fa fa-search"></i>
+                            <img src="images/me-images.png" class="icon-m">
                             <span>相册</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                     <a class="view-table-cell">
-                        <div>
-                            <i class="fa fa-search"></i>
+                            <i class=""><img src="images/me-shoucang.png" class="icon-m"></i>
                             <span>收藏</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                     <a class="view-table-cell">
-                        <div>
-                            <i class="fa fa-search"></i>
+                            <i class=""><img src="images/me-qianbao.png" class="icon-m"></i>
                             <span>钱包</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                     <a class="view-table-cell">
-                        <div>
-                            <i class="fa fa-search"></i>
+                            <i class=""><img src="images/me-ka.png" class="icon-m"></i>
                             <span>卡券</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
 
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell">
-                        <div>
-                            <i class="fa fa-search"></i>
+                            <i class=""><img src="images/me-biao.png" class="icon-m"></i>
                             <span>表情</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
 
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell" href="setting.html">
-                        <div>
-                            <i class="fa fa-cog"></i>
+                            <i class=""><img src="images/me-config.png" class="icon-m"></i>
                             <span>设置</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
             </div>
@@ -110,24 +95,20 @@
     </div>
     <div class="view view-tabbar">
         <a href="message.html">
-            <i class="fa fa-comment"></i>
-
+            <i class=""><img src="images/tab-message.png" class="icon-m"></i>
             <p>消息</p>
         </a>
         <a href="contacts.html">
-            <i class="fa fa-list-ul"></i>
-
+            <i class=""><img src="images/tab-linkman.png" class="icon-m"></i>
             <p>通讯录</p>
         </a>
         <a href="discovery.html">
-            <i class="fa fa-search"></i>
-
+            <i class=""><img src="images/tab-faxian.png" class="icon-m"></i>
             <p>发现</p>
         </a>
         <a href="me.html">
-            <i class="fa fa-user"></i>
-
-            <p>我</p>
+            <i class=""><img src="images/tab-me-a.png" class="icon-m"></i>
+            <p class="text-success">我</p>
         </a>
     </div>
 </div>
