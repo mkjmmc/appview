@@ -8,14 +8,12 @@
     <script src="../../build/flexible.js"></script>
     <link rel="apple-touch-icon" href="favicon.png">
     <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="../../build/base.css"/>
-    <link type="text/css" rel="stylesheet" href="../../build/font.css"/>
-    <link type="text/css" rel="stylesheet" href="../../build/view.css"/>
+    <link type="text/css" rel="stylesheet" href="../../dist/css/appview.css"/>
     <link type="text/css" rel="stylesheet" href="http://frame.yingyutalk.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
     <link type="text/css" rel="stylesheet" href="wx.css"/>
-    <style>
 
-    </style>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../src/js/appview.js"></script>
     <script src="../../build/iscroll-lite.js"></script>
     <script>
         var myScroll;
@@ -31,58 +29,46 @@
 </head>
 <body class="fullscreen" onload="loaded()">
 <div class="scrollview">
-    <div class="view view-titlebar">
-        <a class="view-titlebar-lefticon text-l" href="me.html"><i class="fa fa-angle-left"></i> <span>我</span></a>
-        <div class="view-titlebar-text text-xl text-cut">设置</div>
+    <header class="view view-bar view-bar-nav">
+        <a class="view-icon" href="me.html"><i class="fa fa-angle-left"></i> <span>我</span></a>
+        <div class="view-title">设置</div>
         <a class="view-titlebar-righticon"></a>
-    </div>
+    </header>
     <div class="scroll-wrap bg-whitesmoke">
         <div class="scroll-content">
             <div class="view-list">
                 <div class="view-table m-t-l">
                     <a class="view-table-cell">
-                        <div>
                             <span>账号与安全</span>
                             <small>
                                 <i class="fa fa-lock text-success"></i>
                                 已保护</small>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell">
-                        <div>
                             <span>新消息通知</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                     <a class="view-table-cell">
-                        <div>
                             <span>隐私</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                     <a class="view-table-cell">
-                        <div>
                             <span>通用</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
 
                 <div class="view-table m-t-xl">
                     <a class="view-table-cell">
-                        <div>
                             <span>帮助与反馈</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                     <a class="view-table-cell">
-                        <div>
                             <span>关于</span>
                             <i class="fa fa-angle-right "></i>
-                        </div>
                     </a>
                 </div>
 

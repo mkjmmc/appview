@@ -4,11 +4,13 @@ html, body {
     overflow: hidden;
 }
 
-.view-titlebar {
+
+.view-bar-nav {
     background-image: -webkit-linear-gradient(to bottom, #29282e, #47474a);
     background-image: linear-gradient(to bottom, #29282e, #47474a);
     color: #FFFFFF;
 }
+
 .message-list{ color:#000000;}
 .message-time{color:#b2b2b2}
 .message-content{color:#9b9b9b}
