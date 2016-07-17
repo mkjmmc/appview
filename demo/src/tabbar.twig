@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta content="yes" name="apple-touch-fullscreen">
-    <meta content="telephone=no,email=no" name="format-detection">
-    <script src="../build/flexible.js"></script>
-    <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="../dist/css/appview.css"/>
-    <link type="text/css" rel="stylesheet" href="http://frame.yingyutalk.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
-    <title>Font</title>
-    
-</head>
-<body class="">
-
+{% extends "layout/layout.twig" %}
+{% block title %}Font{% endblock %}
+{% block content %}
 
 <header class="view view-bar view-bar-nav">
     <a class="view-titlebar-lefticon" href="index.html"><i class="fa fa-angle-left text-l"></i> 首页</a>
@@ -65,9 +51,4 @@
         <p>更多</p>
     </a>
 </div>
-
-
-<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="../src/js/appview.js"></script>
-</body>
-</html>
+{% endblock %}

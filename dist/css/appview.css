@@ -195,6 +195,8 @@ th {
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -202,6 +204,8 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  width: 100%;
+  height: 100%;
 }
 input,
 button,
@@ -2501,11 +2505,29 @@ h6,
 }
 
 .view-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.view-container {
   width: 10rem;
   margin: 0 auto;
 }
 .view {
   display: block;
+}
+/* 视图主题 */
+.view-body {
+  flex: 1 ;
+  overflow: auto;
 }
 /* 列布局 */
 .view-flex {
@@ -2642,16 +2664,30 @@ h6,
   background-color: #FFF;
   font-size: 16px;
   height: 44px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*
+  -webkit-box-shadow: 0 1px 6px #ccc;
+  box-shadow: 0 1px 6px #ccc;
+  */
   /* 定制 */
   z-index: 9999999;
 }
 [data-dpr="2"] .view-bar-nav {
   font-size: 32px;
   height: 88px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*-webkit-box-shadow: 0 1px 12px #ccc;
+    box-shadow: 0 1px 12px #ccc;*/
 }
 [data-dpr="3"] .view-bar-nav {
   font-size: 48px;
   height: 132px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /*-webkit-box-shadow: 0 1px 18px #ccc;
+    box-shadow: 0 1px 18px #ccc;*/
 }
 .view-bar-nav:after {
   position: absolute;
@@ -2692,6 +2728,9 @@ h6,
   flex: 1;
   align-self: center;
   padding-right: .32rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .view-bar-nav > a:last-child {
   text-align: right;
